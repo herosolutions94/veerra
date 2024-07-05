@@ -6019,12 +6019,14 @@ li[data-key="notification"], li[data-key="inbox"]{
   display: flex;
   align-items: center;
   position: relative;
-  margin: 4rem 0;
+  margin: 3rem 0;
+}
+.sliderWrapper{
+  width: 100%;
 }
 
 .slider {
   flex: 1;
-  margin: 0 10px;
   -webkit-appearance: none; /* Override default CSS styles */
   appearance: none;
   height: 5px;
@@ -6032,6 +6034,27 @@ li[data-key="notification"], li[data-key="inbox"]{
   outline: none;
   transition: opacity 0.2s;
   position: relative;
+  width: 100%;
+  &:before{
+    @include pos($r:null,$t:-.3rem);
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: $light;
+    border:2px solid $color;
+    cursor: pointer;
+    @include radius(50px);
+  }
+  &:after{
+    @include pos($l:null,$t:-.3rem);
+    content: '';
+    width: 12px;
+    height: 12px;
+    background-color: $light;
+    border:2px solid $color;
+    cursor: pointer;
+    @include radius(50px);
+  }
 }
 
 .slider:hover {
@@ -6046,6 +6069,8 @@ li[data-key="notification"], li[data-key="inbox"]{
   background: $color;
   cursor: pointer;
   @include radius(50px);
+  z-index: 2;
+  position: relative;
 }
 
 .slider::-moz-range-thumb {
@@ -6057,24 +6082,28 @@ li[data-key="notification"], li[data-key="inbox"]{
 }
 
 .minValue, .maxValue, .currentValue {
-  width: 50px;
   text-align: center;
   position: absolute;
   font-size: 1.3rem;
   color: #232323;
 }
 .minValue , .maxValue{
-    top: -32px;
+    top: -15px;
+}
+.minValue {
+  left: 0rem;
 }
 .maxValue{
-  right: 0;
+  right: 0rem;
 }
 
 .currentValue {
   position: absolute;
-  bottom: -35px;
+  bottom: -22px;
   left: 50%;
-  transform: translateX(-50%);
+  width: 39px;
+  z-index: 1;
+  // transform: translateX(-4%);
 }
 
 

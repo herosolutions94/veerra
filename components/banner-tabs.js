@@ -29,7 +29,7 @@ export default function BannerTabs() {
                             </select>
                         </div>
                         <button type="submit" className="site_btn">
-                            <Image src="/images/search.svg" width={200} height={200} />
+                            <Image src="/images/search.svg" width={200} height={200} alt=""/>
                             <span>Shop Agents</span>
                         </button>
                     </div>
@@ -49,7 +49,7 @@ export default function BannerTabs() {
                             </select>
                         </div>
                         <button type="submit" className="site_btn">
-                            <Image src="/images/search.svg" width={200} height={200} />
+                            <Image src="/images/search.svg" width={200} height={200} alt=""/>
                             <span>Shop Agents</span>
                         </button>
                     </div>
@@ -69,7 +69,7 @@ export default function BannerTabs() {
                             </select>
                         </div>
                         <button type="submit" className="site_btn">
-                            <Image src="/images/search.svg" width={200} height={200} />
+                            <Image src="/images/search.svg" width={200} height={200} alt=""/>
                             <span>Shop Agents</span>
                         </button>
                     </div>
