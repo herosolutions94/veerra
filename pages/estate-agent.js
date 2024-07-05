@@ -54,6 +54,32 @@ const EstateAgent = () => {
             </div>
           </div>
         </section>
+        {/* ===== */}
+        <section className="uj_agent_first">
+          <div className="contain">
+            <div className="">
+              <h2>The Veerra-fied Advantage</h2>
+            </div>
+            <div className="flex">
+              <div className="cols">
+                <div className="inner">
+                  <div className="image">
+                    <Image width={1600} height={500} src="" />
+                  </div>
+                  <div className="content">
+                    <h5>Increased Exposure</h5>
+                    <p>
+                      Veerra provides you with a platform to showcase your
+                      services to a wider audience. This exposure can lead to
+                      more potential clients discovering and using your
+                      services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   );
