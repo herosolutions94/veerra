@@ -1,0 +1,44 @@
+.uj_smallbanner {
+  background: #ecf1f7;
+  padding: 7rem 0;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+// ===== uj_agent_first ====
+.uj_agent_first {
+  .flex {
+    box-shadow: 0px 0px 20px -1px rgb(0 0 0 / 8%);
+    :nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .cols {
+      width: 50%;
+    }
+    .col1 {
+      align-self: center;
+      padding: 0 40px;
+    }
+    .col2 {
+      .image {
+        position: relative;
+        padding-bottom: 66%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          position: absolute;
+          height: 100%;
+          width: 100%;
+          top: 0;
+          left: 0;
+          bottom: 0;
+          right: 0;
+          object-fit: cover;
+          z-index: -1;
+        }
+      }
+    }
+  }
+}
