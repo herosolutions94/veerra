@@ -15,7 +15,7 @@ body{
     position: relative;
     min-height: 100vh;
     background-color: #ffffff;
-    color: #000000;
+    color: #696969;
     font-size: 1.5rem;
     font-family: 'Regular';
     margin: 0;
@@ -24,7 +24,7 @@ body{
     word-break: break-word;
     letter-spacing: 0.2px;
     p{
-      color: #000000;
+      color: #696969;
     }
     @include trans;
     // @include laptop{
@@ -51,7 +51,7 @@ body{
     @at-root{
         section {
         position: relative;
-        padding: 9rem 0;
+        padding: 6rem 0;
         @include ipad{
           padding: 7rem 0;
         }
@@ -109,7 +109,7 @@ color: $light;
 h1,
 .h1,
 .size_1 {
-font-size:5rem;
+font-size:4.5rem;
 @include ipad_sm {
     font-size: 4rem;
 }
@@ -121,7 +121,7 @@ font-size:5rem;
 h2,
 .h2,
 .size_2 {
-font-size: 4rem;
+font-size: 3.5rem;
 @include ipad_sm {
   font-size: 3.5rem;
 }
@@ -133,7 +133,7 @@ font-size: 4rem;
 h3,
 .h3,
 .size_3 {
-font-size: 3.5rem;
+font-size: 3.3rem;
 @include mobile {
     font-size: 2.2rem;
 }
@@ -151,7 +151,7 @@ font-size: 2.2rem;
 h5,
 .h5,
 .size_5 {
-font-size: 1.8rem;
+font-size: 1.4rem;
 @include mobile {
     font-size: 1.6rem;
 }
@@ -178,7 +178,7 @@ h6,
 font-family: 'Bold';
 line-height: 1.2;
 margin: 0 0 1rem;
-color: #030303;
+color: #39374D;
 &.heading {
     position: relative;
     margin-bottom: 2.5rem;
@@ -327,7 +327,7 @@ _btn {
             }
         }
         &:hover {
-            background: $color2;
+            background: $black;
             // opacity: 0.8;
             color: $light;
             border-color: transparent;
@@ -391,7 +391,7 @@ _btn {
         }
         &.color{
           background-color: $color2;
-          color: $primary-color;
+          color: $black;
           border-color: $color2;
           &:hover{
             background-color: $color;
@@ -6012,4 +6012,70 @@ li[data-key="notification"], li[data-key="inbox"]{
     display: flex;
   }
 }
+
+/* components/RangeSlider.module.css */
+.sliderContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 4rem 0;
+}
+
+.slider {
+  flex: 1;
+  margin: 0 10px;
+  -webkit-appearance: none; /* Override default CSS styles */
+  appearance: none;
+  height: 5px;
+  background: $color;
+  outline: none;
+  transition: opacity 0.2s;
+  position: relative;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: $color;
+  cursor: pointer;
+  @include radius(50px);
+}
+
+.slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  background: $color;
+  cursor: pointer;
+  @include radius(50px);
+}
+
+.minValue, .maxValue, .currentValue {
+  width: 50px;
+  text-align: center;
+  position: absolute;
+  font-size: 1.3rem;
+  color: #232323;
+}
+.minValue , .maxValue{
+    top: -32px;
+}
+.maxValue{
+  right: 0;
+}
+
+.currentValue {
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 @import "style";

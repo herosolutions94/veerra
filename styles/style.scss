@@ -1,0 +1,151 @@
+.banner{
+    padding: 4rem 0 0;
+   .flex{
+      background-color: #ECF1F7;
+      @include radius(20px);
+      .colL{
+        width: 65%;
+        padding: 9rem 5rem;
+        padding-right: 3rem;
+        p{
+            margin: 2rem 0;
+            padding-right:21rem;
+        }
+      }
+      .colR{
+        width: 35%;
+        align-self: flex-end;
+        padding-top: 4rem;
+        .image{
+            @include img(110%);
+            box-shadow: none;
+            @include radius(0);
+            background-color: transparent;
+            img{
+                @include object(contain);
+                @include pos;
+            }
+        }
+      }
+   } 
+}
+// ======tab_banner====
+.tab_banner{
+    .tabs_top{
+        @include flex;
+        button{
+            background-color: transparent;
+            border: none;
+            color: #9697AB;
+            font-size: 1.3rem;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: .5rem 2rem;
+            &.active, &:hover{
+                background-color: $light;
+                color: #39374D;
+                @include trans;
+            }
+        }
+    }
+    .tab_content{
+        background-color: $light;
+        padding: 2rem;
+        @include radius(15px);
+        border-top-left-radius: 0;
+        form{
+            display: none;
+            &.active{
+                display: block;
+            }
+        }
+        .flex_input{
+            @include flex;
+            gap: 2rem;
+            .field_col{
+                flex: 1;
+                border-right: 1px solid #ddd;
+                &:first-child{
+                    flex: .8;
+                }
+                .input{
+                    border: none;
+                    background-color: transparent;
+                    padding: 0;
+                    height: auto;
+                    font-size: 1.2rem;
+                    color: #696969;
+                }
+                select{
+                    &.input{
+                        opacity: 0.5;
+                    }
+                }
+                label{
+                    font-size: 1.3rem;
+                    font-family: 'SemiBold';
+                    color: #39374D;
+                }
+            }
+        }
+        button{
+            img{
+                height: 2rem;
+            }
+        }
+    }
+}
+// ====sec_heading====
+.sec_heading{
+    margin-bottom: 3rem;
+}
+
+.save_tabs{
+    .tab_cntnt{
+        .flex{
+            justify-content: center;
+            gap: 8rem;
+            margin: 4rem 0;
+            .col{
+                flex: unset;
+                width: 50rem;
+                h4{
+                    text-align: center;
+                    font-family: 'Medium';
+                }
+            }
+        }
+        .flex_res{
+            @include flex($justify:center);
+            gap: 5rem;
+            .res_col{
+                @include flex;
+                gap: 1rem;
+                h5{
+                    font-family: 'Medium';
+                    width: max-content;
+                    margin-bottom: 0;
+                    align-self: center;
+                    color: $black;
+                }
+                .input{
+                    width: 14rem;
+                    height: 3.8rem;
+                    @include radius(.7rem);
+                    background-color: #ECF1F7;
+                    border: 1px solid #DEEDFF;
+                    color: #696969;
+                    font-size: 1.3rem;
+                }
+                select{
+                    &.input{
+                        color: $black;
+                        opacity: 0.5;
+                        background-color: #E8F1FE;
+                        border-color: rgba($color,0.2);
+                    }
+                }
+            }
+        }
+    }
+}
