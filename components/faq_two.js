@@ -4,39 +4,39 @@ const FaqTwo = () => {
   const data = [
     {
       id: "1",
-      title: "How does Learn and Pass help me prepare for online tests?",
+      title: "How do I verify my account?",
       content:
-        "<p>AECOM is a leading multinational engineering firm that offers a broad range of professional services across various industries. The company offers an extensive portfolio of services that includes architecture, engineering, design, construction management, planning, environmental services, and infrastructure operations and maintenance.</p>",
+        "<p>After signing up, you will receive a verification email. Click on the link provided in the email to verify your account.</p>",
     },
     {
       id: "2",
-      title: "What are the common types of online tests?",
+      title: "What should I do if I don't receive a verification email?",
       content:
-        "<p>AECOM is a leading multinational engineering firm that offers a broad range of professional services across various industries. The company offers an extensive portfolio of services that includes architecture, engineering, design, construction management, planning, environmental services, and infrastructure operations and maintenance.</p>",
+        "<p>After signing up, you will receive a verification email. Click on the link provided in the email to verify your account. </p>",
     },
     {
       id: "3",
-      title: "What is the best way to prepare for an online test?",
+      title: "How can I update my profile information?",
       content:
-        "<p>AECOM is a leading multinational engineering firm that offers a broad range of professional services across various industries. The company offers an extensive portfolio of services that includes architecture, engineering, design, construction management, planning, environmental services, and infrastructure operations and maintenance.</p>",
+        "<p> After signing up, you will receive a verification email. Click on the link provided in the email to verify your account.</p>",
     },
     {
       id: "4",
-      title: "When should I sit the actual online test?",
+      title: "What if I don’t receive the verification email?",
       content:
-        "<p>AECOM is a leading multinational engineering firm that offers a broad range of professional services across various industries. The company offers an extensive portfolio of services that includes architecture, engineering, design, construction management, planning, environmental services, and infrastructure operations and maintenance.</p>",
+        "<p> After signing up, you will receive a verification email. Click on the link provided in the email to verify your account.</p>",
     },
     {
       id: "5",
-      title: "My online test is in only a few days. What should I do?",
+      title: "Can I search for agents based on specific criteria?",
       content:
-        "<p>AECOM is a leading multinational engineering firm that offers a broad range of professional services across various industries. The company offers an extensive portfolio of services that includes architecture, engineering, design, construction management, planning, environmental services, and infrastructure operations and maintenance.</p>",
+        "<p>After signing up, you will receive a verification email. Click on the link provided in the email to verify your account. </p>",
     },
     {
       id: "6",
-      title: "What is an online test?",
+      title: "Can I search for agents based on specific criteria?",
       content:
-        "<p>AECOM is a leading multinational engineering firm that offers a broad range of professional services across various industries. The company offers an extensive portfolio of services that includes architecture, engineering, design, construction management, planning, environmental services, and infrastructure operations and maintenance.</p>",
+        "<p>After signing up, you will receive a verification email. Click on the link provided in the email to verify your account.</p>",
     },
   ];
   return (
