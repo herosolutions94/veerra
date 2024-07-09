@@ -1,12 +1,37 @@
+import AsSeller from "@/components/as-seller";
+import BannerTabs from "@/components/banner-tabs";
 import CommonCta from "@/components/common-cta";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-
 const Sellers = () => {
   return (
     <>
       <main>
+        <section className="uj_smallbanner">
+          <div className="contain">
+            <div className="inner">
+              <h2>Looking to sell your home?</h2>
+              <p>
+                Veerra allows you to shop and compare all of the real estate
+                agents in your area to find the one that meets your needs.
+              </p>
+            </div>
+            <BannerTabs />
+          </div>
+        </section>
+        <section className="save_sec">
+          <div className="contain">
+            <div className="sec_heading text-center">
+              <h2>How Much Can You Save With a Veerra Agent?</h2>
+            </div>
+            <div className="save_tabs">
+              <div className="tab_cntnt">
+                <AsSeller />
+              </div>
+            </div>
+          </div>
+        </section>
         {/* ==== */}
         <section className="uj_seller_why">
           <div className="contain">

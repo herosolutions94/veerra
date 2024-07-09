@@ -1,3 +1,5 @@
+import AsBuyer from "@/components/as-buyer";
+import BannerTabs from "@/components/banner-tabs";
 import CommonCta from "@/components/common-cta";
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +10,30 @@ const Buyers = () => {
     <>
       <main>
         {/* ==== */}
+        <section className="uj_smallbanner">
+          <div className="contain">
+            <div className="inner">
+              <h2>Looking to purchase a home?</h2>
+              <p>
+                Veerra allows you to shop and compare all of the real estate
+                agents in your area to find the one that meets your needs.
+              </p>
+            </div>
+            <BannerTabs />
+          </div>
+        </section>
+        <section className="save_sec">
+          <div className="contain">
+            <div className="sec_heading text-center">
+              <h2>How Much Can You Save With a Veerra Agent?</h2>
+            </div>
+            <div className="save_tabs">
+              <div className="tab_cntnt">
+                <AsBuyer />
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="uj_seller_why">
           <div className="contain">
             <div className="sec_heading">
