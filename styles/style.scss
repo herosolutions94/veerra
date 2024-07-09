@@ -108,7 +108,7 @@
             margin: 4rem 0;
             .col{
                 flex: unset;
-                width: 50rem;
+                width: 40rem;
                 h4{
                     text-align: center;
                     font-family: 'Medium';
@@ -121,6 +121,7 @@
             .res_col{
                 @include flex;
                 gap: 1rem;
+                position: relative;
                 h5{
                     font-family: 'Medium';
                     width: max-content;
@@ -146,6 +147,21 @@
                     }
                 }
             }
+            .tool_info{
+                @include pos($l:null,$b:null,$t:-2rem,$r:-2rem);
+                button{
+                    background: transparent;
+                    border: none;
+                    padding: 0!important;
+                    width: 2rem;
+                    height: 2rem;
+                    overflow: hidden;
+                    img{
+                        @include object(contain);
+                    }
+                }
+            }
         }
     }
+    
 }
