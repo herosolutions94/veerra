@@ -9,7 +9,7 @@ const EstateAgent = () => {
         <section className="uj_smallbanner">
           <div className="contain">
             <div className="inner">
-              <h2>Real Estate Agents</h2>
+              <h1>Real Estate Agents</h1>
             </div>
           </div>
         </section>

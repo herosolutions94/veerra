@@ -10,8 +10,8 @@ const HowItworks = () => {
       <main>
         <section className="uj_smallbanner">
           <div className="contain">
-            <div className="inner">
-              <h2>How it works</h2>
+            <div className="inner how_it">
+              <h1>How it works</h1>
               <p>
                 Welcome to veerra! Our platform bridges the gap between real
                 estate agents and clients, making it easier for you to find the

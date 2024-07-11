@@ -72,8 +72,8 @@ const Login = () => {
                         </div>
                       </div>
                       <div className="col-md-12">
-                        <div class="flex txtGrp">
-                          <div class="lbl_btn">
+                        <div className="flex txtGrp">
+                          <div className="lbl_btn">
                             <input
                               type="checkbox"
                               name="remember"

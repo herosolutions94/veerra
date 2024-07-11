@@ -17,6 +17,9 @@
     p {
       margin-top: 15px;
     }
+    &.how_it{
+      width: 83%;
+    }
   }
 
   .tab_banner {
@@ -448,6 +451,9 @@
           padding-left: 33px;
           width: 74%;
           align-self: center;
+          h4{
+            font-family: 'SemiBold';
+          }
         }
       }
     }
@@ -476,6 +482,9 @@
         }
         .content {
           padding-top: 30px;
+          h4{
+            font-family: 'SemiBold';
+          }
         }
       }
     }
@@ -500,6 +509,7 @@
           h4 {
             font-size: 20px;
             color: #087eff;
+            font-family: 'SemiBold';
           }
         }
       }
@@ -521,14 +531,19 @@
       border-radius: 12px;
       border: 1px solid #087eff36;
       margin-bottom: 28px;
+      padding: 2rem;
+      padding-bottom: 0;
       h4 {
         font-size: 18px;
-
         color: #39374d;
         font-family: "Medium";
         margin-bottom: 0;
-        padding: 20px;
+        // padding:0 38px 20px 0px;
+        margin: -2rem -2rem 0;
+        padding: 2rem;
         position: relative;
+        border-bottom: 1px solid #087fff00;
+        cursor: pointer;
         &:after {
           position: absolute;
           top: 0;
@@ -548,34 +563,29 @@
       }
 
       .accordion__details {
-        &:first-child {
-          margin-top: 1.4rem;
-          height: auto;
-        }
-        p {
-          &:last-child {
-            margin-bottom: 0;
+        div{
+          &:first-child {
+            margin-top: 1rem;
           }
         }
 
         overflow: hidden;
         height: 0;
       }
-    }
-    .outer_faq.open {
-      h4 {
-        color: #087eff;
-        &:after {
-          background: url(/images/wrap-down.svg);
-          background-size: contain;
-          background-position: 50%;
-          background-repeat: no-repeat;
+      &.open {
+        h4 {
+          color: #087eff;
+          border-bottom: 1px solid #087eff36;
+          &:after {
+            background: url(/images/wrap-down.svg);
+            background-size: contain;
+            background-position: 50%;
+            background-repeat: no-repeat;
+          }
         }
-      }
-      .accordion__details {
-        height: auto;
-        padding: 20px;
-        border-top: 1px solid #087eff36;
+        .accordion__details {
+          height: auto;
+        }
       }
     }
   }
@@ -632,7 +642,16 @@
     }
   }
 }
+p{
+  &.found_res{
+    margin-bottom: 2rem;
+    strong{
+      font-family: 'SemiBold';
+    }
+  }
+}
 .uj_search_found {
+  
   .inside {
     p {
       margin-bottom: 0px;
@@ -654,7 +673,11 @@
         display: flex;
         box-shadow: 0px 0px 20px -1px #0d4e9530;
         @include radius(10px);
-
+        @include trans;
+        &:hover{
+          @include trans;
+          box-shadow: none;
+        }
         .image {
           width: 60px;
           height: 60px;
@@ -670,7 +693,11 @@
           h4 {
             font-family: "Regular";
             color: $primary-color;
-            font-size: 20px;
+            font-size: 19px;
+            margin-bottom: .5rem;
+          }
+          p{
+            margin-bottom: 0;
           }
         }
       }
@@ -695,7 +722,7 @@
         content: "";
         top: 4px;
         left: 0;
-        height: 16px;
+        height: 14px;
         width: 8px;
         background-image: url(../public/images/arrow_right.svg);
         background-size: cover;
@@ -703,6 +730,9 @@
       }
       a {
         color: #696969;
+        &:hover{
+          color: $color;
+        }
       }
     }
   }
@@ -958,8 +988,8 @@
               display: flex;
               align-items: center;
               .image {
-                width: 80px;
-                height: 80px;
+                width: 130px;
+                height: 130px;
                 img {
                   width: 100%;
                   height: 100%;
@@ -969,8 +999,11 @@
               }
               .content {
                 padding-left: 15px;
-                width: 80%;
+                flex: 1;
                 font-size: 13px;
+                p{
+                  margin-bottom: .5rem;
+                }
                 h5 {
                   color: #000000;
                   font-family: "Medium";
@@ -986,6 +1019,8 @@
                     display: flex;
                     align-items: center;
                     width: 30%;
+                    margin-bottom: .5rem;
+                    padding: 0 .3rem;
                     li {
                       list-style: none;
                       img {
@@ -995,6 +1030,7 @@
                     }
                   }
                   p {
+                    margin-bottom: .5rem;
                     span {
                       color: $black;
                     }
@@ -1006,10 +1042,12 @@
               text-align: center;
               padding-top: 15px;
               border-top: 1px solid rgba(7, 126, 255, 0.44);
+              margin-top: 1rem;
               p {
                 margin-bottom: 0;
-                color: #39374d;
+                color: #39374D;
                 font-family: "SemiBold";
+                font-size: 2.2rem;
               }
             }
           }

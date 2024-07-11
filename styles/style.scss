@@ -149,16 +149,36 @@
             }
             .tool_info{
                 @include pos($l:null,$b:null,$t:-2rem,$r:-2rem);
-                button{
-                    background: transparent;
-                    border: none;
-                    padding: 0!important;
+                cursor: pointer;
+                &:before{
+                    content: attr(data-tooltip);
+                    position: absolute;
+                    bottom: 100%;
+                    left: 50%;
+                    transform: translateX(-7%);
+                    background-color: #ECF1F7;
+                    border: 1px solid #087eff0f;
+                    color: #696969;
+                    padding: 5px;
+                    border-radius: 4px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: opacity 0.3s, visibility 0.3s;
+                    z-index: 10;
+                    width: 17rem;
+                    font-size: 1.3rem;
+                    line-height: 1.3;
+                }
+                &.tool_info:hover{
+                    &:before {
+                        opacity: 1;
+                        visibility: visible;
+                      }
+                  }
+                img{
                     width: 2rem;
                     height: 2rem;
-                    overflow: hidden;
-                    img{
-                        @include object(contain);
-                    }
+                    position: relative;
                 }
             }
         }

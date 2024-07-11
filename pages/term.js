@@ -6,7 +6,7 @@ const Term = () => {
       <section className="uj_smallbanner">
         <div className="contain">
           <div className="inner">
-            <h2>Terms & conditions</h2>
+            <h1>Terms & conditions</h1>
           </div>
         </div>
       </section>

@@ -16,7 +16,7 @@ const Article = () => {
                 <input type="text" placeholder="Ask question" class="input" />
                 <button>
                   <div class="image">
-                    <img src="images/search_1.svg" alt="" />
+                    <img src="/images/search_1.svg" alt="" />
                   </div>
                 </button>
               </form>
@@ -27,7 +27,7 @@ const Article = () => {
         <section className="uj_article">
           <div className="contain">
             <div className="inner">
-              <p>
+              <p className="found_res">
                 Search results for:
                 <strong> Understanding Commission Rates?</strong>
               </p>

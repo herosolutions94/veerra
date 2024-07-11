@@ -27,10 +27,8 @@ export default function AsSeller() {
             <div className="res_col">
                 <h5>You Saved</h5>
                 <input type="text" className="input" name="saved" value={"$2,454"}/>
-                <div className='tool_info'>
-                <Tooltip showArrow={true} content="Calculated based on a commission rate of 3%">
-                    <Button variant="flat"><Image src="/images/info.svg" width={100} height={100} alt=""/></Button>
-                </Tooltip>
+                <div className='tool_info' data-tooltip = "Calculated based on a commission rate of 3%">
+                    <Image src="/images/info.svg" width={100} height={100} alt=""/>
                 </div>
             </div>
             </div>
