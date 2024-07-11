@@ -18,7 +18,7 @@ const Help = () => {
                 <input type="text" placeholder="Ask question" class="input" />
                 <button>
                   <div class="image">
-                    <img src="images/search_1.svg" alt="" />
+                    <img src="/images/search_1.svg" alt="" />
                   </div>
                 </button>
               </form>
@@ -30,7 +30,7 @@ const Help = () => {
           <div className="contain">
             <div className="flex">
               <div className="cols">
-                <div className="inner">
+                <Link href="/help/search-found" className="inner">
                   <div className="image">
                     <Image
                       width={500}
@@ -44,10 +44,10 @@ const Help = () => {
                       Managing your account efficiently is crucial for a.....
                     </p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/help/search-found" className="inner">
                   <div className="image">
                     <Image
                       width={1600}
@@ -61,10 +61,10 @@ const Help = () => {
                       Learn how to create and optimize your agent profile to...
                     </p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/help/search-found" className="inner">
                   <div className="image">
                     <Image
                       width={1600}
@@ -78,10 +78,10 @@ const Help = () => {
                       Navigate our platform with ease using our detailed guides.
                     </p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/help/search-found" className="inner">
                   <div className="image">
                     <Image
                       width={1600}
@@ -96,10 +96,10 @@ const Help = () => {
                       section...
                     </p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/help/search-found" className="inner">
                   <div className="image">
                     <Image
                       width={1600}
@@ -113,10 +113,10 @@ const Help = () => {
                       Encountering technical problems? This section offers.....
                     </p>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="cols">
-                <div className="inner">
+                <Link href="/help/search-found" className="inner">
                   <div className="image">
                     <Image
                       width={1600}
@@ -130,7 +130,7 @@ const Help = () => {
                       Learn how to create and optimize your agent profile to...
                     </p>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -144,31 +144,31 @@ const Help = () => {
             <div class="inner">
               <ul>
                 <li>
-                  <Link href="">How to Create an Account?</Link>
+                  <Link href="/help/search-found">How to Create an Account?</Link>
                 </li>
                 <li>
-                  <Link href="">How to Search for Real Estate Agents?</Link>
+                  <Link href="/help/search-found">How to Search for Real Estate Agents?</Link>
                 </li>
                 <li>
-                  <Link href="">How to Reset Your Password?</Link>
+                  <Link href="/help/search-found">How to Reset Your Password?</Link>
                 </li>
                 <li>
-                  <Link href="">How to Reset Your Password?</Link>
+                  <Link href="/help/search-found">How to Reset Your Password?</Link>
                 </li>
                 <li>
-                  <Link href="">How to Contact an Agent?</Link>
+                  <Link href="/help/search-found">How to Contact an Agent?</Link>
                 </li>
                 <li>
-                  <Link href="">Understanding Commission Rates</Link>
+                  <Link href="/help/search-found">Understanding Commission Rates</Link>
                 </li>
                 <li>
-                  <Link href="">How to Create an Account?</Link>
+                  <Link href="/help/search-found">How to Create an Account?</Link>
                 </li>
                 <li>
-                  <Link href="">How to Search for Real Estate Agents?</Link>
+                  <Link href="/help/search-found">How to Search for Real Estate Agents?</Link>
                 </li>
                 <li>
-                  <Link href="">How to Reset Your Password?</Link>
+                  <Link href="/help/search-found">How to Reset Your Password?</Link>
                 </li>
               </ul>
             </div>

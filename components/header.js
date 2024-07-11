@@ -25,9 +25,9 @@ export default function Header() {
           <div className={toggle ? "toggle active" : "toggle"} onClick={ToggleAction}><span></span></div>
           <nav id="nav" className={toggle ? "active" : ""}>
             <ul>
-                <li><Link href="/sell" onClick={ToggleAction}>Sell</Link></li>
-                <li><Link href="/buy" onClick={ToggleAction}>Buy</Link></li>
-                <li ><Link href="/agents" onClick={ToggleAction}>Agents</Link></li>
+                <li><Link href="/sellers" onClick={ToggleAction}>Sell</Link></li>
+                <li><Link href="/buyers" onClick={ToggleAction}>Buy</Link></li>
+                <li ><Link href="/search-agent" onClick={ToggleAction}>Agents</Link></li>
                 <li ><Link href="/contact" onClick={ToggleAction}>Contact us</Link></li>
                 <li><Link href="/login" className="site_btn" onClick={ToggleAction}>Login</Link></li>
             </ul>

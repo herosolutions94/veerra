@@ -82,8 +82,8 @@ const Signup = () => {
                         </div>
                       </div>
                       <div className="col-md-12">
-                        <div class="flex txtGrp">
-                          <div class="lbl_btn">
+                        <div className="flex txtGrp">
+                          <div className="lbl_btn">
                             <p>
                               Password must have atleast: 8 characters 1 number
                               and 1 symbol

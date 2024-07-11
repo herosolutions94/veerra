@@ -15,7 +15,7 @@ const SearchFound = () => {
                 <input type="text" placeholder="Ask question" class="input" />
                 <button>
                   <div class="image">
-                    <img src="images/search_1.svg" alt="" />
+                    <img src="/images/search_1.svg" alt="" />
                   </div>
                 </button>
               </form>
@@ -26,19 +26,19 @@ const SearchFound = () => {
         <section className="uj_article uj_search_found">
           <div className="contain">
             <div className="inner">
-              <p>
+              <p className="found_res">
                 Search results for:
                 <strong> Understanding Commission Rates?</strong>
               </p>
               <div className="inside">
-                <h5>Understanding Commission Rates</h5>
+                <h5><a href="/help/article">Understanding Commission Rates</a></h5>
                 <p>
                   Commission rates vary by agent. You can view the rates on the
                   agent's profile page under the 'Commission Rates' section.
                 </p>
               </div>
               <div className="inside">
-                <h5>How to Reset Your Password?</h5>
+                <h5><a href="/help/article">How to Reset Your Password?</a></h5>
                 <p>
                   Click on 'Forgot Password' on the login page. Enter your
                   registered email address, and we'll send you instructions to
@@ -46,7 +46,7 @@ const SearchFound = () => {
                 </p>
               </div>
               <div className="inside">
-                <h5>How to Search for Real Estate Agents?</h5>
+                <h5><a href="/help/article">How to Search for Real Estate Agents?</a></h5>
                 <p>
                   Use the 'Search Agents' feature by entering keywords related
                   to the agent's expertise, location, or name. You can also
@@ -54,9 +54,9 @@ const SearchFound = () => {
                 </p>
               </div>
               <div className="inside">
-                <h5>
+                <h5><a href="/help/article">
                   What should I do if I don't receive a verification email?
-                </h5>
+                </a></h5>
                 <p>
                   Use the 'Search Agents' feature by entering keywords related
                   to the agent's expertise, location, or name. You can also

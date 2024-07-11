@@ -323,12 +323,12 @@ export default function Home() {
                     We are growing fast, subscribe to get our latest news for
                     you!
                   </h3>
-                  <div class="search">
+                  <div className="search">
                     <form action="">
                       <input
                         type="text"
                         placeholder="Enter your email..."
-                        class="input"
+                        className="input"
                       />
                       <button className="site_btn">Subscribe</button>
                     </form>
