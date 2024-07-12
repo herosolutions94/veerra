@@ -688,7 +688,7 @@ outline: none !important;
 .contain,
 .contain-fluid {
 position: relative;
-max-width: 120rem;
+max-width: 126rem;
 padding: 0 1.5rem;
 margin: 0 auto;
 min-height: 0.1rem;
@@ -2915,6 +2915,9 @@ nav {
       position: relative;
       padding: .9rem 6rem;
       padding-left: 0;
+      &:last-child{
+        padding-right: 0;
+      }
       &.show_cell_lnk{
         display: none;
         @include ipad_sm{
@@ -2924,7 +2927,6 @@ nav {
       @include ipad_sm{
         width: 100%;
         padding: 1rem;
-        // text-align: center;
         .site_btn {
           margin-top: 0.5rem;
           font-size: 2.5rem;
