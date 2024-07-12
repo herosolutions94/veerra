@@ -1,23 +1,26 @@
 import Pagination from "@/components/pagination";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-
+import Team_form from "@/components/team-form";
+import React, { useState } from "react";
 const TeamDetail = () => {
+  const [formPopup, setFormPopup] = useState(false);
+
   return (
     <>
       <main>
-        <section className="uj_team_detail">
+        <section className="uj_team_detail uj_solo_deatail">
           <div className="contain">
             <div className="flex">
               <div className="col1">
                 <div className="col1_inner">
-                  <div className="inner">
+                  <div className="inner inner2">
                     <div className="image2">
                       <Image
                         width={700}
                         height={500}
                         src="/images/warning.svg"
+                        onClick={() => setFormPopup(true)}
                       />
                     </div>
                     <div className="inside">
@@ -133,6 +136,149 @@ const TeamDetail = () => {
                         </p>
                       </div>
                     </div>
+                    <p className="down_p">1.75% Base Commission Rate</p>
+                  </div>
+                  <div className="inner inner2">
+                    <h4>Meet the Team</h4>
+
+                    <div className="flex">
+                      <div className="inside inside2">
+                        <div className="image">
+                          <Image
+                            width={1200}
+                            height={500}
+                            src="/images/agent-1.jpg"
+                          />
+                        </div>
+                        <div className="content">
+                          <h5>Aleena Gilbert</h5>
+                          <div className="stars">
+                            <p>4.5</p>
+                            <ul>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                            </ul>
+                            <p>
+                              <span>Reviews</span>
+                            </p>
+                          </div>
+                          <p>
+                            <span>27 Years of Experience</span>
+                          </p>
+                        </div>
+                      </div>
+                      <div className="inside inside2">
+                        <div className="image">
+                          <Image
+                            width={1200}
+                            height={500}
+                            src="/images/agent-1.jpg"
+                          />
+                        </div>
+                        <div className="content">
+                          <h5>Aleena Gilbert</h5>
+
+                          <div className="stars">
+                            <p>4.5</p>
+                            <ul>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                              <li>
+                                {" "}
+                                <Image
+                                  width={1200}
+                                  height={500}
+                                  src="/images/star.svg"
+                                />
+                              </li>
+                            </ul>
+                            <p>
+                              <span>Reviews</span>
+                            </p>
+                          </div>
+                          <p>
+                            <span>27 Years of Experience</span>
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="inner_area">
+                    <h5>Our Unique Value</h5>
+                    <p>
+                      There are many variations of passages of Lorem Ipsum
+                      available, but the majority have suffered alteration in
+                      some form, by injected humour, or randomised words which
+                      don't look even slightly
+                    </p>
                   </div>
                   <div className="inner_area">
                     <h5>About Ryan Tetreault</h5>
@@ -381,6 +527,75 @@ const TeamDetail = () => {
               </div>
               <div className="col2">
                 <div className="col2_inner">
+                  <div className="inner_card">
+                    <div className="head">
+                      <h5>Optional Add-ons</h5>
+                    </div>
+                    <div className="body-content">
+                      <ul className="Expertise Seller">
+                        <li>
+                          <p>
+                            <strong>Seller Services</strong>
+                          </p>
+                          <p>
+                            <strong>Price</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <p>Comparative Analysis</p>
+                          <p>Free</p>
+                        </li>
+                        <li>
+                          <p>Home Sign</p>
+                          <p>Free</p>
+                        </li>
+                        <li>
+                          <p>Home Cleaning</p>
+                          <p>$769</p>
+                        </li>
+                        <li>
+                          <p>3D Virtual Tour</p>
+                          <p>$750</p>
+                        </li>
+                        <li>
+                          <p>Photography</p>
+                          <p>$869</p>
+                        </li>
+                        <li>
+                          <p>Landscaping</p>
+                          <p>$869</p>
+                        </li>
+                        <li>
+                          <p>Moving Services</p>
+                          <p>$869</p>
+                        </li>
+                        <li>
+                          <p>Staging</p>
+                          <p>$869</p>
+                        </li>
+                        <li>
+                          <p>
+                            <strong>Buyer Services</strong>
+                          </p>
+                          <p>
+                            <strong>Price</strong>
+                          </p>
+                        </li>
+                        <li>
+                          <p>Market Analysis</p>
+                          <p>$869</p>
+                        </li>
+                        <li>
+                          <p>Remote Tour</p>
+                          <p>$869</p>
+                        </li>
+                        <li>
+                          <p>Remote Tour</p>
+                          <p>$869</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
                   <div className="cta">
                     <Link href="" className="site_btn">
                       Contact Us
@@ -569,6 +784,7 @@ const TeamDetail = () => {
           </div>
         </section>
       </main>
+      <Team_form formPopup={formPopup} setFormPopup={setFormPopup} />
     </>
   );
 };
