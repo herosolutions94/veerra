@@ -8,17 +8,103 @@ const EstateAgent = () => {
       <main>
         <section className="uj_smallbanner">
           <div className="contain">
-            <div className="inner">
-              <h1>Real Estate Agents</h1>
+            <div className="uj_top_content">
+              <h3>
+                Would You Refuse Warm Leads Searching You For FREE?
+                <strong>You means like... specifically YOU!</strong>
+                <div className="images">
+                  <img src="images/agentarrow.svg" />
+                </div>
+              </h3>
+              <h1>Meet Veerra.</h1>
+            </div>
+          </div>
+        </section>
+        <section className="uj_brand_new">
+          <div className="contain">
+            <div className="content">
+              <h3>
+                Veerra is the brand new marketplace for buyers and sellers to
+                search for rockstar agents like yourself.
+              </h3>
+              <Link href="" className="site_btn">
+                Become a Veerra Agent Today{" "}
+              </Link>
+              <p>
+                <small>
+                  Get started in less than 3 minutes - then it’s on autopilot
+                </small>
+              </p>
+              <h4>
+                As a reward for the early action takers, get access the Early
+                Bird Ambassador Program
+              </h4>
+            </div>
+            <div className="flex">
+              <div className="col1">
+                <div className="inner">
+                  <h5>
+                    <strong>Veerra-fied Ambassador:</strong>
+                  </h5>
+                  <h6>Invite five licensed agents to Veerra gives you:</h6>
+                  <ul>
+                    <li>
+                      As an Ambassador you get priority placement over everyone
+                      else (including Pros)
+                    </li>
+                    <li>
+                      A green Veerra icon portrait showing everyone your
+                      commitment to improving real estate
+                    </li>
+                    <li>Free Pro when released!</li>
+                    <li>
+                      The Ambassador program doesn’t last long, and once it
+                      ends, it will never come back!
+                    </li>
+                  </ul>
+                  <p>P.S. You’ll keep Ambassador status permanently!</p>
+                </div>
+                <div className="shape">
+                  <img src="images/agentarrow2.svg" />
+                </div>
+              </div>
+              <div className="col2">
+                <div className="image">
+                  <img src="/images/ambassador.jpg" />
+                </div>
+              </div>
+              <div className="col1 col3">
+                <div className="inner">
+                  <h5>
+                    <strong>Veerra-fied Pro: (coming soon)</strong>
+                  </h5>
+                  <h6>For the agents with the drive and will for success</h6>
+                  <ul>
+                    <li>Pros get priority placement over non-Pros</li>
+                    <li>
+                      A blue Veerra icon showing everyone your advanced features
+                      to solve your clients needs
+                    </li>
+                    <li>Integrations/Automations into your favorite CRM</li>
+                    <li>Additional Custom Specialties</li>
+                    <li>Custom Add-ons</li>
+                    <li>Additional features and bonuses (coming soon)</li>
+                  </ul>
+                  <p>P.S. You’ll keep Ambassador status permanently!</p>
+                </div>
+                <div className="shape1">
+                  <img src="images/agentarrow.svg" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
         {/* ==== */}
-        <section className="uj_agent_first">
+        <section className="uj_agent_first ">
           <div className="contain">
             <div className="flex">
               <div className="cols col1">
-                <div className="inner">
+                <div className="inner center">
                   <h3>Take charge of your real estate career</h3>
                   <p>
                     With Veerra you will obtain phenomenal leads where you are
@@ -36,7 +122,7 @@ const EstateAgent = () => {
             </div>
             <div className="flex">
               <div className="cols col1">
-                <div className="inner">
+                <div className="inner center">
                   <h3>Attract the Ideal Client</h3>
                   <p>
                     As a Veerra-fied agent you and your team can custom tailor
@@ -45,6 +131,11 @@ const EstateAgent = () => {
                     seller has zero objections for you to become their star
                     agent.
                   </p>
+                  <div className="cta">
+                    <Link href="" className="site_btn">
+                      Become a Veerra Agent Today{" "}
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="cols col2">
@@ -145,10 +236,15 @@ const EstateAgent = () => {
                 </div>
               </div>
             </div>
+            <div className="cta">
+              <Link href="" className="site_btn">
+                Become a Veerra Agent Today{" "}
+              </Link>
+            </div>
           </div>
         </section>
         {/* ===== */}
-        <section className="uj_agent_services">
+        {/* <section className="uj_agent_services">
           <div className="contain">
             <div className="sec_heading">
               <h2>
@@ -243,7 +339,7 @@ const EstateAgent = () => {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
         {/* ====== */}
         <section className="uj_agent_cta">
           <div className="contain">

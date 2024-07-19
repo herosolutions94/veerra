@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const ForgetPassword = () => {
+const ResetPassword = () => {
   return (
     <>
       <section className="uj_login uj_forget">
@@ -38,52 +38,18 @@ const ForgetPassword = () => {
                         <div className="txtGrp">
                           <div className="icos">
                             <Image
-                              src="images/EyeSlash.svg"
+                              src="images/uj_mail.svg"
                               alt=""
                               width={1000}
                               height={100}
                             />
                           </div>
                           <input
-                            type="Password"
+                            type="email"
                             className="input"
-                            name="Password"
-                            placeholder="New Password"
-                            id="password"
+                            name="email"
+                            placeholder="Your Email"
                           />
-                        </div>
-                      </div>
-                      <div className="col-md-12">
-                        <div className="txtGrp">
-                          <div className="icos">
-                            <Image
-                              src="images/EyeSlash.svg"
-                              alt=""
-                              width={1000}
-                              height={100}
-                            />
-                          </div>
-                          <input
-                            type="Password"
-                            className="input"
-                            name="Password"
-                            placeholder="Confirm Password"
-                            id="password"
-                          />
-                        </div>
-                      </div>
-                      <div className="col-md-12">
-                        <div className="flex txtGrp">
-                          <div className="lbl_btn">
-                            <p>
-                              Password must have atleast:
-                              <ul>
-                                <li>8 characters</li>
-                                <li>1 number</li>
-                                <li>1 symbol</li>
-                              </ul>
-                            </p>
-                          </div>
                         </div>
                       </div>
                       <div className="col-md-12">
@@ -103,4 +69,4 @@ const ForgetPassword = () => {
   );
 };
 
-export default ForgetPassword;
+export default ResetPassword;

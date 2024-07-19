@@ -13,23 +13,266 @@ export default function Home() {
       <main>
         <section className="banner">
           <div className="contain">
-            <div className="flex">
-              <div className="colL">
-                <h1>Transparent Commissions, Trusted Transactions</h1>
-                <p>
-                  Discover and shop the commissions of real estate agents and
-                  realtors in your area
-                </p>
-                <BannerTabs />
+            <div className="uj_bg_color">
+              <div className="uj_top_content">
+                <h3>
+                  Need a way to REALLY find the BEST agent at the click of the
+                  button?
+                </h3>
+                <h1>Meet Veerra.</h1>
               </div>
-              <div className="colR">
-                <div className="image">
-                  <Image
-                    src="/images/banner.png"
-                    width={500}
-                    height={700}
-                    alt=""
-                  />
+              <div className="flex uj_filters">
+                <div className="colL">
+                  <h1>Transparent Commissions, Trusted Transactions</h1>
+                  <p>
+                    Discover and shop the commissions of real estate agents and
+                    realtors in your area
+                  </p>
+                  <BannerTabs />
+                </div>
+                <div className="colR  col2">
+                  <div className="bottom_area ">
+                    <div className="flex ">
+                      <div className="cols">
+                        <div className="inner">
+                          <div className="inside">
+                            <div className="image">
+                              <Image
+                                width={1200}
+                                height={500}
+                                src="/images/agent-1.jpg"
+                              />
+                            </div>
+                            <div className="content">
+                              <h5>Aleena Gilbert</h5>
+                              <p>Keller William Realty</p>
+                              <div className="stars">
+                                <p>5.0</p>
+                                <ul>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                </ul>
+                                <p>
+                                  <span>- 25 Veerra-fied Reviews</span>
+                                </p>
+                              </div>
+                              <div className="stars">
+                                <p>5.0</p>
+                                <ul>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                </ul>
+                                <p>
+                                  <span>- 245 Reviews</span>
+                                </p>
+                              </div>
+                              <p>
+                                <span>License # : 832984284</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="com_rate">
+                            <p>1.75% Base Commission Rate</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="cols">
+                        <div className="inner">
+                          <div className="inside">
+                            <div className="image">
+                              <Image
+                                width={1200}
+                                height={500}
+                                src="/images/agent-1.jpg"
+                              />
+                            </div>
+                            <div className="content">
+                              <h5>Aleena Gilbert</h5>
+                              <p>Keller William Realty</p>
+                              <div className="stars">
+                                <p>5.0</p>
+                                <ul>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                </ul>
+                                <p>
+                                  <span>- 25 Veerra-fied Reviews</span>
+                                </p>
+                              </div>
+                              <div className="stars">
+                                <p>5.0</p>
+                                <ul>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                  <li>
+                                    {" "}
+                                    <Image
+                                      width={1200}
+                                      height={500}
+                                      src="/images/star.svg"
+                                    />
+                                  </li>
+                                </ul>
+                                <p>
+                                  <span>- 245 Reviews</span>
+                                </p>
+                              </div>
+                              <p>
+                                <span>License # : 832984284</span>
+                              </p>
+                            </div>
+                          </div>
+                          <div className="com_rate">
+                            <p>1.75% Base Commission Rate</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -59,6 +302,45 @@ export default function Home() {
                 {tabSave === 2 ? <AsBuyer /> : null}
                 {tabSave === 1 ? <AsSeller /> : null}
               </div>
+            </div>
+          </div>
+        </section>
+        <section className="veera_yes_sec">
+          <div className="contain">
+            <div className="flex">
+              <div className="cols">
+                <div className="inner">
+                  <h2>You</h2>
+                  <div className="image2">
+                    <img src="/images/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div className="cols">
+                <div className="inner">
+                  <div className="image">
+                    <img src="/images/logo.svg" />
+                  </div>
+                  <div className="image1">
+                    <img src="/images/arrow.svg" />
+                  </div>
+                </div>
+              </div>
+              <div className="cols">
+                <div className="inner">
+                  <h2>Yes</h2>
+                </div>
+              </div>
+            </div>
+            <div className="next_cntnt">
+              <p className="less_width">
+                If you wanted an air fryer, you might shop on Amazon to find the
+                best deal. But what if you wanted the best real estate agent?
+              </p>
+              <p>
+                Veerra has you covered. At Veerra, our mission is to show you
+                what each real estate agent in your area has to offer.
+              </p>
             </div>
           </div>
         </section>
