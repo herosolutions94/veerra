@@ -24,6 +24,7 @@ const Index = () => {
                 </form>
               </div>
             </div>
+
             <div className="flex">
               <div className="col1">
                 <div className="inner_card ut_common_bg">
