@@ -9,6 +9,13 @@
 .uj_smallbanner {
   background: #ecf1f7;
   padding: 7rem 0;
+  .inner2 {
+    text-align: center;
+    h1 {
+      color: $black;
+      margin-bottom: 0;
+    }
+  }
   .inner {
     width: 50%;
     h2 {
@@ -26,6 +33,38 @@
     width: 65%;
     margin-top: 30px;
   }
+  .uj_top_content {
+    text-align: center;
+    h1 {
+      font-size: 70px;
+      margin: 30px 0;
+      margin-bottom: 0;
+      color: $black;
+    }
+    h3 {
+      font-family: "Caveat";
+      font-size: 42px;
+      color: $black;
+      position: relative;
+      width: fit-content;
+      margin: 0 auto;
+      .images {
+        position: absolute;
+        right: 86px;
+        top: 17px;
+        width: 13%;
+      }
+      strong {
+        font-family: "Caveat";
+        font-size: 23px;
+        position: absolute;
+        color: $black;
+        top: 55px;
+        right: -40px;
+        width: 17%;
+      }
+    }
+  }
 }
 // ===== uj_agent_first ====
 .uj_agent_first {
@@ -40,6 +79,15 @@
     .col1 {
       align-self: center;
       padding: 0 40px;
+      .center {
+        h3 {
+          text-align: center;
+        }
+      }
+      .cta {
+        width: fit-content;
+        margin: 0 auto;
+      }
     }
     .col2 {
       .image {
@@ -62,6 +110,10 @@
   .sec_heading {
     text-align: center;
     margin-bottom: 30px;
+  }
+  .cta {
+    width: fit-content;
+    margin: 0 auto;
   }
   .flex {
     .cols {
@@ -1366,5 +1418,648 @@ p {
         }
       }
     }
+  }
+}
+// ====== date_area ====
+.date_area {
+  select {
+    background: #fff !important;
+  }
+}
+.profile_forms {
+  .form-block.flex {
+    display: block;
+    position: relative;
+    .flex {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .style_it {
+    background: transparent;
+    color: $primary-color;
+    border: none;
+    position: absolute;
+    right: -56px;
+    bottom: 5px;
+  }
+  .sub_contain {
+    max-width: 98rem !important;
+    form {
+      .flex {
+        .lbl_area {
+          span {
+            color: #696969;
+          }
+        }
+        .colL {
+          .inner {
+            padding-right: 65px !important;
+            .txtArea {
+              height: 11.7rem;
+            }
+            .lbl_detail {
+              width: 100%;
+              padding-top: 20px;
+              h4 {
+                font-size: 19px;
+                color: $black;
+              }
+              p {
+                color: $black;
+                font-size: 15px;
+                font-family: "Medium";
+                span {
+                  color: #696969;
+                }
+              }
+            }
+            textarea.input {
+              height: 19rem;
+            }
+            .lbl_area {
+              span {
+                color: #696969;
+              }
+            }
+            .field_area {
+              .body-content {
+                ul {
+                  width: 85%;
+                  li {
+                    list-style: none;
+                    display: flex;
+                    justify-content: space-between;
+                    .right {
+                      text-align: right;
+                      margin-right: -2px;
+                    }
+                    p {
+                      width: calc(100% / 3);
+                    }
+                    strong {
+                      color: $black;
+                      font-family: "Medium";
+                    }
+                    .tick {
+                      input {
+                        border: 1px solid rgba(7, 126, 255, 0.2);
+                        height: 23px;
+                        width: 23px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        .no_day {
+          .date_area {
+            width: 70%;
+            .day_here {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    .cta {
+      width: fit-content;
+      margin: 0 auto;
+      margin-top: 41px;
+    }
+  }
+  .uj_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+  .inner.uj_leader_form {
+    width: 100% !important;
+    padding-right: 70px !important;
+
+    textarea.input {
+      height: 19rem;
+    }
+    .lbl_check {
+      display: flex;
+      width: 100%;
+      label {
+        padding-left: 10px;
+      }
+    }
+    .less_width {
+      .input {
+        width: 21%;
+      }
+    }
+    .less_input {
+      .input {
+        width: 64%;
+      }
+    }
+    .form_block2 {
+      .field_area {
+        padding-left: 0;
+        position: relative;
+      }
+      .flex1 {
+        .field_area {
+          padding-left: 1rem;
+        }
+        .lbl_area {
+          width: 100%;
+          padding-left: 1rem;
+        }
+      }
+      .width_less {
+        width: 100%;
+        margin-bottom: 0;
+        .cols {
+          width: calc(100% / 3);
+        }
+      }
+    }
+    .percent-area {
+      position: relative;
+      .input {
+        padding-right: 36px;
+      }
+      p {
+        position: absolute;
+        left: 18%;
+        top: 8px;
+      }
+    }
+    .amount {
+      p {
+        left: unset;
+        right: 5%;
+      }
+    }
+    .block-2 {
+      padding-top: 1.5rem;
+    }
+    .serve_area {
+      position: relative;
+    }
+  }
+}
+// =======
+.uj_verificaton {
+  .form_tabs {
+    background: #f1f7ff;
+    padding: 35px;
+    @include radius(20px);
+    width: 68%;
+    margin: 0 auto;
+    position: relative;
+    .top_head {
+      text-align: center;
+    }
+    .tabs_top {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+      .tab_btn {
+        border: none;
+        background: rgba(7, 126, 255, 0.26);
+        color: $primary-color;
+        padding: 8px 15px;
+        min-width: 82px;
+        @include radius(6px);
+        margin: 0 6px;
+      }
+      .tab_btn.active {
+        background: $primary-color;
+        color: $light;
+      }
+    }
+    .tab_content {
+      form {
+        display: none;
+        h6 {
+          color: #121900;
+          font-family: "Regular";
+          margin-bottom: 7px;
+          font-size: 13px;
+        }
+        .txtGrp {
+          margin-bottom: 2rem;
+          .input {
+            border: 1px solid #e6e6e6;
+            background-color: $light;
+            color: #696969;
+          }
+        }
+        .cta {
+          display: flex;
+          justify-content: center;
+        }
+        .price_range {
+          .col-md-2 {
+            align-self: center;
+            p {
+              text-align: center;
+              margin-bottom: 0;
+            }
+          }
+        }
+        .up_detail {
+          p {
+            color: $black;
+            font-size: 13px;
+          }
+        }
+      }
+      form.active {
+        display: block;
+      }
+    }
+  }
+}
+// =====
+.dash_team_form {
+  .inner_form {
+    display: flex;
+    width: 82%;
+    margin: 0 auto;
+    .sub_contain {
+      margin: unset !important;
+      max-width: unset !important;
+      width: 73%;
+      .colL {
+        width: 100% !important;
+      }
+      .inner {
+        width: 100%;
+      }
+      .lbl_areap {
+        p {
+          color: $black;
+          font-size: 13px;
+        }
+      }
+      .dash_refferal {
+        padding-right: 2rem !important;
+      }
+    }
+    .left_bar {
+      width: 27%;
+      margin-top: 21px;
+      li {
+        list-style: none;
+        padding-bottom: 9px;
+        a {
+          color: #696969;
+        }
+      }
+      li.active {
+        a {
+          color: $black;
+        }
+      }
+    }
+  }
+}
+// ===
+.dash_team_management {
+  .red_btn {
+    button {
+      color: $black;
+      border: 1px solid $black;
+      background: #ffa984;
+      padding: 7px;
+      min-width: 80px;
+      margin-top: 20px;
+      @include radius(6px);
+    }
+  }
+  .field_area {
+    position: relative;
+    .sub_btn {
+      position: absolute;
+      right: 17%;
+      top: 5px;
+      button {
+        background: $primary-color;
+        border: none;
+        min-width: 70px;
+        color: $light;
+        padding: 4px;
+        @include radius(6px);
+      }
+    }
+    .style_btn {
+      position: absolute;
+      right: 21%;
+      top: 7px;
+      button {
+        background: transparent;
+        border: none;
+        color: $primary-color;
+      }
+    }
+  }
+}
+// ---
+.dash_warning {
+  .inner_form {
+    background: #dfeeff;
+  }
+  form {
+    h4 {
+      text-align: center;
+      padding-top: 20px;
+    }
+    .txtGrp {
+      p {
+        color: $black;
+        font-size: 13px;
+      }
+    }
+    .form_lbl_pro {
+      padding-left: 11px;
+    }
+  }
+}
+.form_change {
+  .txtGrp {
+    .flex {
+      align-items: center;
+    }
+  }
+  .lbl_area {
+    padding-right: 20px;
+  }
+}
+.bcm_team.profile_forms {
+  .col1 {
+    width: 69%;
+    h4 {
+      text-align: center;
+    }
+    .flex1 {
+      margin-bottom: 20px;
+      p {
+        color: $black;
+      }
+    }
+    .cta {
+      margin-top: 20px;
+    }
+    .style_it {
+      bottom: 27px;
+    }
+  }
+}
+// ======
+header {
+  ._dropDown {
+    position: relative;
+    z-index: 3;
+  }
+  ._dropCnt {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 300px;
+    max-width: 300px;
+    background: #fff;
+    margin-top: 10px;
+    /* border: 1px solid #eee; */
+    border-radius: 7px;
+    box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+      0 8px 16px -8px rgba(0, 0, 0, 0.3), 0 -6px 16px -6px rgba(0, 0, 0, 0.025);
+    transition: all ease 0.5s;
+    overflow: hidden;
+    z-index: 3;
+  }
+  .dropLst {
+    padding: 6px 0;
+  }
+  .user_img {
+    display: flex;
+    align-items: center;
+    .smal_icon {
+      padding-left: 13px;
+    }
+  }
+  .proIco {
+    margin-right: 20px;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
+    .ico {
+      width: 43px;
+      height: 43px;
+      background: #fff;
+      -webkit-box-shadow: 0 2px 5px 0 rgba(59, 65, 94, 0.1),
+        0 1px 1px 0 rgba(0, 0, 0, 0.07);
+      box-shadow: 0 2px 5px 0 rgba(59, 65, 94, 0.1),
+        0 1px 1px 0 rgba(0, 0, 0, 0.07);
+      @include radius(100%);
+      img {
+        object-fit: cover;
+        border-radius: inherit;
+      }
+    }
+    .proDrop {
+      left: initial;
+      right: 8px;
+      min-width: 200px;
+      max-height: calc(100vh - 90px);
+      -webkit-box-shadow: rgb(0 0 0 / 10%) 0 4px 12px 0;
+      box-shadow: rgb(0 0 0 / 10%) 0 4px 12px 0;
+      overflow: auto;
+      li {
+        display: block;
+        a {
+          display: flex;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+}
+// ==== ut_agent_dashboard ===
+.ut_agent_dashboard {
+  .top_bar {
+    display: flex;
+    align-items: center;
+    .heading {
+      width: 22%;
+      h4 {
+        margin-bottom: 0;
+      }
+    }
+    .search {
+      width: 78%;
+      form {
+        width: 80%;
+        margin: 0 auto;
+        position: relative;
+        button {
+          position: absolute;
+          right: 10px;
+          background: transparent;
+          top: 13px;
+          border: none;
+        }
+        .input {
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+  .ut_common_bg {
+    background: #f6fafe;
+    border: 1px solid rgba(7, 126, 255, 0.44);
+    padding: 13px;
+  }
+  .col1 {
+    width: 22%;
+
+    .inner_card {
+      @include radius(12px);
+
+      margin: 15px 0;
+      padding-bottom: 0;
+      ul {
+        padding-left: 0;
+        li {
+          display: flex;
+          justify-content: space-between;
+          p {
+            width: 55%;
+            font-size: 13px;
+            &:nth-child(2) {
+              text-align: right;
+              width: 45%;
+            }
+          }
+        }
+      }
+    }
+  }
+  .col2 {
+    width: 78%;
+    padding-left: 10px;
+    .tabs_top {
+      margin: 18px 0px;
+      .tab_btn {
+        background: #f6fafe;
+        border: 1px solid rgba(7, 126, 255, 0.44);
+        padding: 5px 15px;
+        border-radius: 6px;
+        margin: 0 3px;
+      }
+      .tab_btn.active {
+        background: $primary-color;
+        color: $light;
+      }
+    }
+  }
+  .dash_table {
+    @include radius(10px);
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 500px;
+    table {
+      width: 100%;
+      th {
+        background: rgba(7, 126, 255, 0.27);
+        padding: 10px 7px;
+        font-size: 13px;
+        color: $black !important;
+      }
+      td {
+        padding: 7px;
+        font-size: 12px;
+        .copy {
+          p {
+            color: $primary-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .pagination {
+      margin-bottom: 40px;
+    }
+  }
+}
+// ===== ut_client_dashboard ===
+.ut_client_dashboard {
+  .col2 {
+    padding-left: 0;
+    padding-right: 15px;
+    padding-top: 15px;
+  }
+  .col1 {
+    margin-top: -13px;
+    .lblock {
+      h4 {
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 7px;
+      }
+      .ut_in_height {
+        min-height: 350px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+// =======
+.dash_agent_review {
+  .tableDv {
+    .tableCell {
+      .col1 {
+        .inner_form {
+          background: #dfeeff !important;
+          h4 {
+            text-align: center;
+          }
+          .field_area {
+            ul {
+              display: flex;
+              align-items: center;
+              width: 100%;
+              margin-bottom: 0;
+              padding-left: 0;
+              li {
+                list-style: none;
+                width: 20px;
+                img {
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .txtArea {
+    height: 14rem !important;
+  }
+  .less_width {
+    .input {
+      width: 58%;
+    }
+  }
+  .cta {
+    margin-top: 20px;
   }
 }

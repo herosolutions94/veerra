@@ -1,8 +1,10 @@
+import VerificationForm from "@/components/verification-form";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Signup = () => {
+  const [formPopup, setFormPopup] = useState(false);
   return (
     <>
       <section className="uj_login uj_signup">
@@ -85,15 +87,24 @@ const Signup = () => {
                         <div className="flex txtGrp">
                           <div className="lbl_btn">
                             <p>
-                              Password must have atleast: 8 characters 1 number
-                              and 1 symbol
+                              Password must have atleast:
+                              <ul>
+                                <li>8 characters</li>
+                                <li>1 number</li>
+                                <li>1 symbol</li>
+                              </ul>
                             </p>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-12">
                         <div className="cta">
-                          <button className="site_btn">Sign Up</button>
+                          <button
+                            type="button"
+                            className="site_btn"
+                            onClick={() => setFormPopup(true)}>
+                            Sign Up
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -104,6 +115,7 @@ const Signup = () => {
           </div>
         </div>
       </section>
+      <VerificationForm formPopup={formPopup} setFormPopup={setFormPopup} />
     </>
   );
 };
