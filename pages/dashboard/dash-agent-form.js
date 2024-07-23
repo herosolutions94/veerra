@@ -12,6 +12,11 @@ const DashAgentForm = () => {
   const addFormBlock = () => {
     setFormBlocks([...formBlocks, { id: Date.now() }]);
   };
+  const [formBlocks2, setFormBlocks2] = useState([{ id: Date.now() }]);
+
+  const addFormBlock2 = () => {
+    setFormBlocks2([...formBlocks2, { id: Date.now() }]);
+  };
   return (
     <>
       <main>
@@ -205,7 +210,7 @@ const DashAgentForm = () => {
                           </div>
                         </div>
                         <div className="form-block flex">
-                          {formBlocks.map((block, index) => (
+                          {formBlocks2.map((block, index) => (
                             <div key={block.id} className="block-1">
                               <div className="flex">
                                 <div className="lbl_area">
@@ -268,7 +273,7 @@ const DashAgentForm = () => {
                           ))}
                           <button
                             type="button"
-                            onClick={addFormBlock}
+                            onClick={addFormBlock2}
                             className="style_it">
                             Add +
                           </button>
@@ -318,10 +323,7 @@ const DashAgentForm = () => {
                             </div>
                           </div>
 
-                          <button
-                            type="button"
-                            onClick={addFormBlock}
-                            className="style_it">
+                          <button type="button" className="style_it">
                             Add +
                           </button>
                         </div>
@@ -445,10 +447,7 @@ const DashAgentForm = () => {
                             </div>
                           </div>
 
-                          <button
-                            type="button"
-                            onClick={addFormBlock}
-                            className="style_it">
+                          <button type="button" className="style_it">
                             Add +
                           </button>
                         </div>
@@ -473,10 +472,7 @@ const DashAgentForm = () => {
                               </select>
                             </div>
                           </div>
-                          <button
-                            type="button"
-                            onClick={addFormBlock}
-                            className="style_it">
+                          <button type="button" className="style_it">
                             Add +
                           </button>
                         </div>

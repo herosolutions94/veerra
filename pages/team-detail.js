@@ -1,9 +1,10 @@
 import Pagination from "@/components/pagination";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
-
+import Team_form from "@/components/team-form";
+import React, { useState } from "react";
 const TeamDetail = () => {
+  const [formPopup, setFormPopup] = useState(false);
   return (
     <>
       <main>
@@ -18,6 +19,7 @@ const TeamDetail = () => {
                         width={700}
                         height={500}
                         src="/images/warning.svg"
+                        onClick={() => setFormPopup(true)}
                       />
                     </div>
                     <div className="inside">
@@ -569,6 +571,7 @@ const TeamDetail = () => {
           </div>
         </section>
       </main>
+      <Team_form formPopup={formPopup} setFormPopup={setFormPopup} />
     </>
   );
 };

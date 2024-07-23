@@ -7,22 +7,26 @@ const DashSideBar = () => {
       <div className="dash-side-bar">
         <ul>
           <li className="active">
-            <Link href="/dash-team-leader">Personal Details</Link>
+            <Link href="/dashboard/dash-team-leader">Personal Details</Link>
           </li>
           <li>
-            <Link href="/dash-agent-form">Agent Details</Link>
+            <Link href="/dashboard/dash-agent-form">Agent Details</Link>
           </li>
           <li>
-            <Link href="/dash-agent-status">Agent Status</Link>
+            <Link href="/dashboard/dash-agent-status">Agent Status</Link>
           </li>
           <li>
-            <Link href="/dash-agent-principle">Principal Agent Details</Link>
+            <Link href="/dashboard/dash-agent-principle">
+              Principal Agent Details
+            </Link>
           </li>
           <li>
-            <Link href="/dash-team-management">Team Management</Link>
+            <Link href="/dashboard/dash-team-management">Team Management</Link>
           </li>
           <li>
-            <Link href="/dash-refferal-exclusion">Refferal Exclusion</Link>
+            <Link href="/dashboard/dash-refferal-exclusion">
+              Refferal Exclusion
+            </Link>
           </li>
         </ul>
       </div>

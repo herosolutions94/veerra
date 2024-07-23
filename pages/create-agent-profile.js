@@ -15,7 +15,11 @@ const CreateAgentProfile = () => {
   const addFormBlock = () => {
     setFormBlocks([...formBlocks, { id: Date.now() }]);
   };
+  const [formBlocks3, setFormBlocks3] = useState([{ id: Date.now() }]);
 
+  const addFormBlock3 = () => {
+    setFormBlocks3([...formBlocks3, { id: Date.now() }]);
+  };
   return (
     <>
       <main>
@@ -204,7 +208,7 @@ const CreateAgentProfile = () => {
                         </div>
                       </div>
                       <div className="form-block flex">
-                        {formBlocks.map((block, index) => (
+                        {formBlocks3.map((block, index) => (
                           <div key={block.id} className="block-1">
                             <div className="flex">
                               <div className="lbl_area">
@@ -263,7 +267,7 @@ const CreateAgentProfile = () => {
                         ))}
                         <button
                           type="button"
-                          onClick={addFormBlock}
+                          onClick={addFormBlock3}
                           className="style_it">
                           Add +
                         </button>

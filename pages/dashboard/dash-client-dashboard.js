@@ -19,7 +19,7 @@ const DashClientDashboard = () => {
             <div className="flex">
               <div className="col2">
                 <div className="tab_content">
-                  <div className="dash_table ut_common_bg">
+                  <div className="dash_table ut_common_bg active">
                     <table>
                       <thead>
                         <tr>

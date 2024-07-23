@@ -236,7 +236,7 @@ const SearchAgent = () => {
                   <div className="bottom_area">
                     <div className="flex flexRow">
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -352,10 +352,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -471,10 +471,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -590,10 +590,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -709,10 +709,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -828,10 +828,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -947,10 +947,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -1066,10 +1066,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -1185,10 +1185,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -1304,10 +1304,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -1423,10 +1423,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -1542,10 +1542,10 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                       <div className="cols">
-                        <div className="inner">
+                        <Link href="" className="inner">
                           <div className="inside">
                             <div className="image">
                               <Image
@@ -1661,7 +1661,7 @@ const SearchAgent = () => {
                           <div className="com_rate">
                             <p>1.75% Base Commission Rate</p>
                           </div>
-                        </div>
+                        </Link>
                       </div>
                     </div>
                   </div>

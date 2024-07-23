@@ -5,10 +5,24 @@
   width: 100%;
   object-fit: cover;
 }
+@include ipad {
+}
+
+@include ipad_sm {
+}
+
+@include mobile {
+}
+
+@include mobile_md {
+}
 // ====
 .uj_smallbanner {
   background: #ecf1f7;
   padding: 7rem 0;
+  @include mobile_sm {
+    padding: 5rem 0;
+  }
   .inner2 {
     text-align: center;
     h1 {
@@ -18,6 +32,9 @@
   }
   .inner {
     width: 50%;
+    @include mobile {
+      width: 100%;
+    }
     h2 {
       margin-bottom: 0;
     }
@@ -26,6 +43,9 @@
     }
     &.how_it {
       width: 83%;
+      @include ipad {
+        width: 100%;
+      }
     }
   }
 
@@ -40,6 +60,9 @@
       margin: 30px 0;
       margin-bottom: 0;
       color: $black;
+      @include mobile_md {
+        font-size: 56px;
+      }
     }
     h3 {
       font-family: "Caveat";
@@ -53,6 +76,14 @@
         right: 86px;
         top: 17px;
         width: 13%;
+        @include ipad_sm {
+          right: 148px;
+          top: 27px;
+          width: 13%;
+        }
+        @include mobile_md {
+          display: none;
+        }
       }
       strong {
         font-family: "Caveat";
@@ -62,6 +93,15 @@
         top: 55px;
         right: -40px;
         width: 17%;
+        @include ipad_sm {
+          right: 14px;
+        }
+        @include mobile {
+          width: 19%;
+        }
+        @include mobile_md {
+          display: none;
+        }
       }
     }
   }
@@ -70,15 +110,26 @@
 .uj_agent_first {
   .flex {
     box-shadow: 0px 0px 20px -1px rgb(0 0 0 / 8%);
+    @include ipad_sm {
+      padding: 30px;
+    }
+
     &:nth-child(even) {
       flex-direction: row-reverse;
     }
     .cols {
       width: 50%;
+      @include ipad_sm {
+        width: 100%;
+      }
     }
     .col1 {
       align-self: center;
       padding: 0 40px;
+      @include ipad_sm {
+        padding: 0px;
+        padding-top: 0px;
+      }
       .center {
         h3 {
           text-align: center;
@@ -90,6 +141,14 @@
       }
     }
     .col2 {
+      @include ipad_sm {
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+      @include mobile_md {
+        width: 100%;
+      }
       .image {
         position: relative;
         padding-bottom: 66%;
@@ -97,6 +156,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include ipad_sm {
+          @include radius(15px);
+        }
         img {
           @include imge;
         }
@@ -110,6 +172,9 @@
   .sec_heading {
     text-align: center;
     margin-bottom: 30px;
+    @include mobile_md {
+      margin-bottom: 20px;
+    }
   }
   .cta {
     width: fit-content;
@@ -118,15 +183,28 @@
   .flex {
     .cols {
       width: calc(100% / 2);
+      @include mobile_md {
+        width: 100%;
+      }
       .inner {
         padding: 20px;
         display: flex;
+        @include ipad_sm {
+          display: block;
+          padding: 10px;
+        }
+        @include mobile_md {
+          padding: 15px 0;
+        }
         .image {
           width: 60px;
           height: 60px;
           padding: 10px;
           @include radius(10px);
           background: $primary-color;
+          @include ipad_sm {
+            margin-bottom: 15px;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -136,6 +214,10 @@
         .content {
           padding-left: 15px;
           width: 88%;
+          @include ipad_sm {
+            padding-left: 0;
+            width: 100%;
+          }
         }
       }
     }
@@ -153,6 +235,7 @@
   .flex {
     .cols {
       width: calc(100% / 3);
+
       padding: 15px;
       .inner {
         padding: 30px;
@@ -190,6 +273,12 @@
     text-align: center;
     @include radius(10px);
     width: 65%;
+    @include ipad_sm {
+      width: 90%;
+    }
+    @include mobile_md {
+      width: 100%;
+    }
     margin: 0 auto;
     h2 {
       color: $light;
@@ -211,32 +300,59 @@
   padding-top: 0;
   .sec_heading {
     width: 70%;
+    @include ipad_sm {
+      width: 92%;
+    }
+    @include mobile_md {
+      width: 100%;
+    }
     text-align: center;
     margin: 0 auto;
   }
   .flex {
     padding-top: 80px;
+    @include ipad_sm {
+      padding-top: 15px;
+    }
     &:nth-child(2) {
       padding-top: 40px;
+      @include ipad_sm {
+        padding-top: 15px;
+      }
     }
     &:nth-child(odd) {
       flex-direction: row-reverse;
       .col1 {
         padding-left: 60px;
+        @include ipad_sm {
+          padding-left: 0;
+        }
       }
     }
     &:nth-child(even) {
       .col1 {
         padding-right: 70px;
+        @include ipad_sm {
+          padding-right: 0;
+        }
       }
     }
 
     .col1 {
       align-self: center;
       width: 40%;
+      @include ipad_sm {
+        width: 100%;
+      }
     }
     .col2 {
       width: 60%;
+      @include ipad_sm {
+        margin: 20px auto;
+      }
+      @include mobile_md {
+        width: 100%;
+      }
       .image {
         position: relative;
         padding-bottom: 59%;
@@ -259,12 +375,24 @@
     text-align: center;
     @include radius(10px);
     width: 65%;
+    @include ipad {
+      width: 83%;
+    }
+    @include ipad_sm {
+      width: 100%;
+    }
+    @include mobile_md {
+      padding: 30px;
+    }
     margin: 0 auto;
     h2 {
       color: $light;
     }
     .content {
       margin: 30px 0;
+      @include mobile_md {
+        margin: 16px 0;
+      }
       p {
         color: $light;
       }
@@ -278,12 +406,22 @@
       align-items: center;
       justify-content: center;
       padding-left: 0;
+      @include mobile_md {
+        display: block;
+        width: 100%;
+      }
       li {
         list-style: none;
         padding: 0 20px;
+        @include mobile_md {
+          padding: 5px;
+        }
         .site_btn {
           background: $light;
           color: $primary-color;
+          @include mobile_md {
+            width: 100%;
+          }
         }
       }
     }
@@ -291,8 +429,16 @@
 }
 // ===== uj_contact_us ====
 .uj_contact_us {
+  .flex {
+    @include mobile {
+      flex-direction: column-reverse;
+    }
+  }
   .col1 {
     width: 60%;
+    @include mobile {
+      width: 100%;
+    }
     .inner_form {
       background: #087eff03;
       padding: 40px;
@@ -319,10 +465,17 @@
     }
   }
   .col2 {
+    @include mobile {
+      width: 100%;
+      padding-left: 0;
+    }
     width: 40%;
     align-self: center;
     padding-left: 30px;
     ul {
+      @include mobile {
+        padding-left: 0;
+      }
       li {
         list-style: none;
         padding-bottom: 20px;
@@ -351,6 +504,12 @@
 // ====== uj_login ====
 .uj_login {
   padding: 30px;
+
+  @include ipad {
+    height: unset;
+    padding: 38px 0;
+  }
+
   .col1 {
     min-height: 94vh;
     width: 45%;
@@ -358,6 +517,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    @include ipad {
+      width: 100%;
+      min-height: 36vh;
+    }
+    @include mobile_sm {
+      padding: 20px;
+    }
     @include radius(15px);
     padding: 50px;
     display: flex;
@@ -375,10 +541,25 @@
       }
       .site_btn {
         @include radius(50px);
+        @include mobile_sm {
+          width: fit-content;
+        }
       }
     }
   }
   .col2 {
+    @include ipad {
+      width: 65%;
+      margin: 0 auto;
+      padding: 0;
+      padding-top: 50px;
+    }
+    @include mobile {
+      width: 75%;
+    }
+    @include mobile_sm {
+      width: 100%;
+    }
     width: 55%;
     padding: 50px;
     align-self: center;
@@ -399,6 +580,7 @@
         background: $light;
         border-color: #9d9999;
         color: #555252;
+        padding-right: 40px;
       }
       .icos {
         position: absolute;
@@ -478,10 +660,16 @@
   .flex {
     .cols {
       width: calc(100% / 2);
+      @include mobile_sm {
+        width: 100%;
+      }
       padding: 10px;
       .inner {
         padding: 30px;
         display: flex;
+        @include ipad_sm {
+          display: block;
+        }
         background: #087eff17;
         height: 100%;
         @include radius(20px);
@@ -493,6 +681,9 @@
           @include radius(10px);
           background: $light;
           box-shadow: 0px 0px 20px -1px #00000030;
+          @include ipad_sm {
+            margin-bottom: 25px;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -502,6 +693,10 @@
         .content {
           padding-left: 33px;
           width: 74%;
+          @include ipad_sm {
+            width: 100%;
+            padding-left: 0;
+          }
           align-self: center;
           h4 {
             font-family: "SemiBold";
@@ -519,10 +714,22 @@
     margin-bottom: 13px;
   }
   .flex {
+    @include ipad_sm {
+      justify-content: center;
+    }
     .cols {
       width: calc(100% / 3);
+      @include ipad_sm {
+        width: calc(100% / 2);
+      }
+      @include mobile_sm {
+        width: 100%;
+      }
       .inner {
         padding: 20px;
+        @include mobile_sm {
+          padding: 20px 0;
+        }
         .image {
           width: 240px;
 
@@ -548,6 +755,12 @@
   .sec_heading {
     text-align: center;
     width: 52%;
+    @include ipad_sm {
+      width: 74%;
+    }
+    @include mobile_sm {
+      width: 100%;
+    }
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -555,8 +768,18 @@
     justify-content: center;
     .cols {
       width: calc(100% / 3);
+      @include ipad {
+        width: calc(100% / 2);
+      }
+      @include mobile_sm {
+        width: 100%;
+        padding: 10px 0px;
+      }
       .inner {
         padding: 13px;
+        @include mobile_sm {
+          padding: 0;
+        }
         .content {
           h4 {
             font-size: 20px;
@@ -577,6 +800,9 @@
   }
   .inner {
     width: 80%;
+    @include mobile_sm {
+      width: 100%;
+    }
     margin: 0 auto;
     .outer_faq {
       background: #087eff14;
@@ -593,6 +819,9 @@
         // padding:0 38px 20px 0px;
         margin: -2rem -2rem 0;
         padding: 2rem;
+        @include mobile_sm {
+          padding-right: 40px;
+        }
         position: relative;
         border-bottom: 1px solid #087fff00;
         cursor: pointer;
@@ -654,6 +883,12 @@
     width: 46%;
     margin: 0 auto;
     position: relative;
+    @include ipad_sm {
+      width: 62%;
+    }
+    @include mobile_sm {
+      width: 100%;
+    }
     .input {
       border: none;
       background: $light;
@@ -718,6 +953,12 @@ p {
   .flex {
     .cols {
       width: calc(100% / 3);
+      @include ipad_sm {
+        width: calc(100% / 2);
+      }
+      @include mobile_sm {
+        width: 100%;
+      }
       padding: 10px;
       .inner {
         padding: 25px 15px;
@@ -762,8 +1003,17 @@ p {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    @include mobile_sm {
+      padding-left: 0;
+    }
     li {
       width: calc(100% / 3);
+      @include ipad_sm {
+        width: calc(100% / 2);
+      }
+      @include mobile_sm {
+        width: 100%;
+      }
       list-style: none;
       padding-left: 18px;
       padding-bottom: 10px;
@@ -794,10 +1044,16 @@ p {
   .flex {
     box-shadow: none;
     padding: 0;
+    @include ipad_sm {
+      flex-direction: column-reverse;
+    }
     .col1 {
       padding-right: 0;
     }
     .col2 {
+      @include ipad {
+        align-self: center;
+      }
       .image {
         @include radius(20px);
       }
@@ -810,12 +1066,28 @@ p {
   .sec_heading {
     text-align: center;
     width: 63%;
+    @include ipad {
+      width: 100%;
+    }
+
     margin: 0 auto;
     margin-bottom: 30px;
   }
   .flex {
+    @include ipad {
+      justify-content: center;
+    }
     .cols {
       width: calc(100% / 5);
+      @include ipad {
+        padding: 9px;
+      }
+      @include ipad_sm {
+        width: calc(100% / 3);
+      }
+      @include mobile_sm {
+        width: calc(100% / 2);
+      }
       padding: 15px;
       .inner {
         padding: 10px;
@@ -855,10 +1127,17 @@ p {
     content: "";
     background: #ecf1f7;
     width: 65%;
-    @include radius(50px);
+    @include radius(0 50px 50px 0px);
     height: 100%;
+    @include ipad_sm {
+      width: 100%;
+      @include radius(0);
+    }
   }
   .flex {
+    @include ipad_sm {
+      flex-direction: unset;
+    }
     .col1 {
       padding-right: 40px;
       padding-left: 0;
@@ -868,7 +1147,20 @@ p {
 // ===== uj_index_services ===
 .uj_index_services {
   padding-top: 6rem;
+  .sec_heading {
+    @include ipad {
+      width: 86%;
+    }
+  }
   .cols {
+    @include ipad {
+      width: calc(100% / 2) !important;
+    }
+    @include mobile_sm {
+      width: 100% !important;
+      padding: 10px 0 !important
+      ;
+    }
     .inner {
       height: 100%;
       text-align: left !important;
@@ -895,12 +1187,21 @@ p {
 // ====== uj_index_subscribe =====
 .uj_index_subscribe {
   margin-bottom: 5rem;
+  @include ipad_sm {
+    margin-bottom: 0;
+    padding-top: 0;
+  }
+
   .flex {
     background: #ecf1f7;
     padding: 6rem 40px;
     @include radius(30px);
     .col2 {
       width: 55%;
+      @include mobile_sm {
+        width: 100%;
+        padding-left: 0;
+      }
       padding-left: 50px;
       h3 {
         margin-bottom: 30px;
@@ -923,11 +1224,25 @@ p {
     }
     .col1 {
       width: 40%;
+      @include mobile_sm {
+        width: 100%;
+        display: none;
+      }
       .image {
         position: absolute;
         width: 36%;
         top: -7rem;
         left: 26px;
+        @include ipad {
+          width: 42%;
+          top: -5rem;
+          left: -9px;
+        }
+        @include ipad_sm {
+          top: 0rem;
+          left: -9px;
+        }
+
         img {
           width: 100%;
           height: 100%;
@@ -944,6 +1259,9 @@ p {
       @include radius(15px);
       border-top-left-radius: 15px;
       width: 76%;
+      @include ipad_sm {
+        width: 100%;
+      }
       margin: 0 auto;
       form {
         display: block !important;
@@ -971,6 +1289,12 @@ p {
   padding-top: 0;
   .col1 {
     width: 15%;
+    @include ipad {
+      width: 28%;
+    }
+    @include mobile_sm {
+      width: 100%;
+    }
     .top_heading {
       h5 {
         font-size: 19px;
@@ -997,6 +1321,13 @@ p {
   }
   .col2 {
     width: 85%;
+    @include ipad {
+      width: 70%;
+    }
+    @include mobile_sm {
+      width: 100%;
+      padding-left: 0;
+    }
     padding-left: 40px;
     .top_bar {
       display: flex;
@@ -1007,12 +1338,16 @@ p {
           color: #000;
           font-size: 19px;
           font-family: "Medium";
+          margin-bottom: 0;
         }
       }
       .assc {
         display: flex;
         align-items: center;
         select {
+          @include mobile_sm {
+            margin: 0;
+          }
           background-color: transparent;
           border: none;
           @include radius(0);
@@ -1029,8 +1364,12 @@ p {
       .flex {
         .cols {
           width: calc(100% / 3);
+          @include ipad {
+            width: 100%;
+          }
           padding: 10px;
           .inner {
+            display: block;
             padding: 15px;
             background: rgba(24, 119, 242, 0.04);
             border: 1px solid rgba(7, 126, 255, 0.44);
@@ -1038,9 +1377,15 @@ p {
             .inside {
               display: flex;
               align-items: center;
+              @include mobile_sm {
+                display: block;
+              }
               .image {
                 width: 130px;
                 height: 130px;
+                @include mobile_sm {
+                  margin-bottom: 10px;
+                }
                 img {
                   width: 100%;
                   height: 100%;
@@ -1107,6 +1452,9 @@ p {
       .flexRow {
         margin-left: -10px;
         margin-right: -26px;
+        @include mobile_sm {
+          margin-right: -10px;
+        }
       }
     }
   }
@@ -1116,9 +1464,16 @@ p {
   .flex {
     width: 90%;
     margin: 0 auto;
+    @include ipad {
+      width: 100%;
+    }
     .col1 {
       width: 65%;
       padding-right: 30px;
+      @include ipad_sm {
+        width: 100%;
+        padding-right: 0;
+      }
       .inner {
         position: relative;
         .image2 {
@@ -1138,9 +1493,15 @@ p {
         align-items: center;
         border-bottom: 1px solid rgba(7, 126, 255, 0.44);
         padding-bottom: 15px;
+        @include mobile_sm {
+          display: block;
+        }
         .image {
           width: 160px;
           height: 160px;
+          @include mobile_sm {
+            margin-bottom: 15px;
+          }
           img {
             width: 100%;
             height: 100%;
@@ -1152,6 +1513,10 @@ p {
           padding-left: 25px;
           width: 80%;
           font-size: 13px;
+          @include mobile_sm {
+            width: 100%;
+            padding-left: 0;
+          }
           h5 {
             color: #000000;
             font-family: "Medium";
@@ -1178,6 +1543,7 @@ p {
             p {
               span {
                 color: $black;
+                padding-left: 10px;
               }
             }
           }
@@ -1212,10 +1578,15 @@ p {
           justify-content: space-between;
           align-items: center;
           padding-bottom: 15px;
-
+          @include mobile_sm {
+            display: block;
+          }
           .assc {
             display: flex;
             align-items: center;
+            @include mobile_sm {
+              margin: 20px 0;
+            }
             select {
               background-color: transparent;
               border: none;
@@ -1237,6 +1608,21 @@ p {
     }
     .col2 {
       width: 35%;
+      @include ipad_sm {
+        width: 100%;
+        padding-top: 30px;
+        .cta {
+          width: fit-content;
+          margin: 0 auto;
+          margin-bottom: 20px;
+        }
+      }
+      @include mobile_sm {
+        .cta {
+          width: 100%;
+        }
+      }
+
       .inner_card {
         background: #f6fafe;
         border: 1px solid rgba(7, 126, 255, 0.44);
@@ -1295,6 +1681,11 @@ p {
             align-items: center;
             p {
               width: calc(100% / 2);
+              &:nth-child(2) {
+                @include ipad_sm {
+                  text-align: right;
+                }
+              }
             }
           }
         }
@@ -1304,13 +1695,16 @@ p {
             align-items: center;
             p {
               width: calc(100% / 2);
+              &:nth-child(2) {
+                @include ipad_sm {
+                  text-align: right;
+                }
+              }
             }
           }
         }
         .Languages {
           text-align: center;
-          p {
-          }
         }
         .Seller {
           li {
@@ -1393,9 +1787,18 @@ p {
       vertical-align: middle;
       .col1 {
         margin: 0 auto;
+        @include ipad_sm {
+          width: 83%;
+        }
+        @include mobile_sm {
+          width: 100%;
+        }
         .inner_form {
           background: #f1f7ff !important;
           position: relative;
+          @include mobile_sm {
+            padding: 23px;
+          }
           .txtGrp {
             margin-bottom: 20px;
             .input {
@@ -1485,6 +1888,9 @@ p {
               .body-content {
                 ul {
                   width: 85%;
+                  @include mobile_sm {
+                    padding-left: 0;
+                  }
                   li {
                     list-style: none;
                     display: flex;
@@ -1495,6 +1901,9 @@ p {
                     }
                     p {
                       width: calc(100% / 3);
+                      @include mobile_sm {
+                        font-size: 12px;
+                      }
                     }
                     strong {
                       color: $black;
@@ -1516,6 +1925,9 @@ p {
         .no_day {
           .date_area {
             width: 70%;
+            @include mobile_sm {
+              width: 100%;
+            }
             .day_here {
               display: none;
             }
@@ -1533,8 +1945,17 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include mobile_sm {
+      display: block;
+    }
     h2 {
       margin-bottom: 0;
+      @include mobile_sm {
+        margin-bottom: 20px;
+      }
+    }
+    .uj_cta {
+      width: fit-content;
     }
   }
   .inner.uj_leader_form {
@@ -1554,11 +1975,17 @@ p {
     .less_width {
       .input {
         width: 21%;
+        @include mobile_sm {
+          width: 54%;
+        }
       }
     }
     .less_input {
       .input {
         width: 64%;
+        @include mobile_sm {
+          width: 100%;
+        }
       }
     }
     .form_block2 {
@@ -1580,6 +2007,18 @@ p {
         margin-bottom: 0;
         .cols {
           width: calc(100% / 3);
+          @include mobile_sm {
+            width: 100%;
+            margin-top: 10px;
+            .flex1 {
+              .lbl_area {
+                padding-left: 0;
+              }
+              .field_area {
+                padding-left: 0;
+              }
+            }
+          }
         }
       }
     }
@@ -1592,6 +2031,9 @@ p {
         position: absolute;
         left: 18%;
         top: 8px;
+        @include mobile_sm {
+          left: 45%;
+        }
       }
     }
     .amount {
@@ -1615,6 +2057,12 @@ p {
     padding: 35px;
     @include radius(20px);
     width: 68%;
+    @include ipad {
+      width: 80%;
+    }
+    @include ipad_sm {
+      width: 100%;
+    }
     margin: 0 auto;
     position: relative;
     .top_head {
@@ -1624,6 +2072,9 @@ p {
       display: flex;
       justify-content: center;
       margin: 20px 0;
+      @include mobile_sm {
+        flex-wrap: wrap;
+      }
       .tab_btn {
         border: none;
         background: rgba(7, 126, 255, 0.26);
@@ -1632,6 +2083,10 @@ p {
         min-width: 82px;
         @include radius(6px);
         margin: 0 6px;
+        @include mobile_sm {
+          width: 100%;
+          margin: 7px 0;
+        }
       }
       .tab_btn.active {
         background: $primary-color;
@@ -1686,11 +2141,18 @@ p {
   .inner_form {
     display: flex;
     width: 82%;
+    @include ipad {
+      width: 100%;
+      flex-wrap: wrap;
+    }
     margin: 0 auto;
     .sub_contain {
       margin: unset !important;
       max-width: unset !important;
       width: 73%;
+      @include ipad_sm {
+        width: 100%;
+      }
       .colL {
         width: 100% !important;
       }
@@ -1709,6 +2171,9 @@ p {
     }
     .left_bar {
       width: 27%;
+      @include ipad_sm {
+        width: 100%;
+      }
       margin-top: 21px;
       li {
         list-style: none;
@@ -1744,6 +2209,9 @@ p {
       position: absolute;
       right: 17%;
       top: 5px;
+      @include mobile_sm {
+        right: -70px;
+      }
       button {
         background: $primary-color;
         border: none;
@@ -1751,12 +2219,19 @@ p {
         color: $light;
         padding: 4px;
         @include radius(6px);
+        @include mobile_sm {
+          background: transparent;
+          color: $primary-color;
+        }
       }
     }
     .style_btn {
       position: absolute;
       right: 21%;
       top: 7px;
+      @include mobile_sm {
+        right: -62px;
+      }
       button {
         background: transparent;
         border: none;
@@ -1767,6 +2242,11 @@ p {
 }
 // ---
 .dash_warning {
+  @include mobile_sm {
+    .flex {
+      flex-direction: unset !important;
+    }
+  }
   .inner_form {
     background: #dfeeff;
   }
@@ -1797,6 +2277,11 @@ p {
   }
 }
 .bcm_team.profile_forms {
+  .flex {
+    @include mobile {
+      flex-direction: unset;
+    }
+  }
   .col1 {
     width: 69%;
     h4 {
@@ -1804,6 +2289,12 @@ p {
     }
     .flex1 {
       margin-bottom: 20px;
+      @include mobile_sm {
+        margin-bottom: 6px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
       p {
         color: $black;
       }
@@ -1813,11 +2304,20 @@ p {
     }
     .style_it {
       bottom: 27px;
+      @include mobile_sm {
+        bottom: 4px;
+        right: -73px;
+      }
     }
   }
 }
 // ======
 header {
+  nav {
+    @include ipad_sm {
+      margin-left: auto !important;
+    }
+  }
   ._dropDown {
     position: relative;
     z-index: 3;
@@ -1893,17 +2393,38 @@ header {
   .top_bar {
     display: flex;
     align-items: center;
+    @include mobile_sm {
+      flex-wrap: wrap;
+    }
     .heading {
       width: 22%;
+
+      @include ipad_sm {
+        width: 30%;
+      }
+      @include mobile_sm {
+        width: 100%;
+      }
       h4 {
         margin-bottom: 0;
       }
     }
     .search {
       width: 78%;
+      @include mobile_sm {
+        width: 100%;
+        margin-top: 15px !important;
+      }
       form {
         width: 80%;
+        @include mobile_sm {
+          width: 100%;
+        }
         margin: 0 auto;
+        @include ipad_sm {
+          margin: unset;
+          margin-left: auto;
+        }
         position: relative;
         button {
           position: absolute;
@@ -1918,6 +2439,28 @@ header {
       }
     }
   }
+  .top_area {
+    @include ipad_sm {
+      width: 100%;
+      overflow: auto;
+    }
+    .tabs_top {
+      @include ipad_sm {
+        width: 133%;
+      }
+      @include mobile_sm {
+        width: 257%;
+      }
+    }
+  }
+  .tab_content {
+    > div {
+      display: none;
+    }
+    div.active {
+      display: block;
+    }
+  }
   .ut_common_bg {
     background: #f6fafe;
     border: 1px solid rgba(7, 126, 255, 0.44);
@@ -1925,7 +2468,9 @@ header {
   }
   .col1 {
     width: 22%;
-
+    @include ipad {
+      width: 100%;
+    }
     .inner_card {
       @include radius(12px);
 
@@ -1950,6 +2495,9 @@ header {
   }
   .col2 {
     width: 78%;
+    @include ipad {
+      width: 100%;
+    }
     padding-left: 10px;
     .tabs_top {
       margin: 18px 0px;
@@ -1967,6 +2515,10 @@ header {
     }
   }
   .dash_table {
+    @include ipad_sm {
+      width: 100%;
+      overflow-x: auto;
+    }
     @include radius(10px);
     padding: 0;
     overflow: hidden;
@@ -1975,6 +2527,13 @@ header {
     gap: 500px;
     table {
       width: 100%;
+      @include ipad_sm {
+        width: 170%;
+        overflow: auto;
+      }
+      @include mobile_sm {
+        width: 256%;
+      }
       th {
         background: rgba(7, 126, 255, 0.27);
         padding: 10px 7px;
@@ -2003,9 +2562,21 @@ header {
     padding-left: 0;
     padding-right: 15px;
     padding-top: 15px;
+    @include ipad {
+      padding-right: 0;
+    }
   }
   .col1 {
     margin-top: -13px;
+    @include ipad_sm {
+      margin-top: 20px;
+      .dash_table {
+        overflow: unset;
+        table {
+          width: 100%;
+        }
+      }
+    }
     .lblock {
       h4 {
         font-size: 16px;
@@ -2021,6 +2592,11 @@ header {
 }
 // =======
 .dash_agent_review {
+  @include mobile {
+    .flex {
+      flex-direction: unset;
+    }
+  }
   .tableDv {
     .tableCell {
       .col1 {
@@ -2028,6 +2604,7 @@ header {
           background: #dfeeff !important;
           h4 {
             text-align: center;
+            margin-top: 34px;
           }
           .field_area {
             ul {
@@ -2057,6 +2634,9 @@ header {
   .less_width {
     .input {
       width: 58%;
+      @include mobile {
+        width: 100%;
+      }
     }
   }
   .cta {

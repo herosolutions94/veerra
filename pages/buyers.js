@@ -10,16 +10,30 @@ const Buyers = () => {
     <>
       <main>
         {/* ==== */}
-        <section className="uj_smallbanner">
+        <section className="uj_smallbanner uj_sell_buy_smb">
           <div className="contain">
-            <div className="inner">
-              <h2>Looking to purchase a home?</h2>
-              <p>
-                Veerra allows you to shop and compare all of the real estate
-                agents in your area to find the one that meets your needs.
-              </p>
+            <div className="flex">
+              <div className="col1">
+                <div className="inner">
+                  <h2>Looking to purchase a home?</h2>
+                  <p>
+                    Veerra allows you to shop and compare all of the real estate
+                    agents in your area to find the one that meets your needs.
+                  </p>
+                </div>
+                <BannerTabs />
+              </div>
+              <div className="col2">
+                <div className="image">
+                  <Image
+                    src="/images/smb_2.jpg"
+                    alt=""
+                    width={1000}
+                    height={1000}
+                  />
+                </div>
+              </div>
             </div>
-            <BannerTabs />
           </div>
         </section>
         <section className="save_sec">

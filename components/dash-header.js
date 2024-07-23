@@ -49,7 +49,7 @@ const DashHeader = () => {
                 <div className="proDrop _dropCnt">
                   <ul className="dropLst">
                     <li>
-                      <Link href="/dashboard/dash-agent-dashboard">
+                      <Link href="/dashboard/">
                         <span>Agent Dashboard</span>
                       </Link>
                     </li>

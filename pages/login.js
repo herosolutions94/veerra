@@ -1,8 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const Login = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
+  };
+
   return (
     <>
       <section className="uj_login">
@@ -11,7 +17,7 @@ const Login = () => {
             <div className="col1">
               <div className="signup_btn">
                 <p>Looking to Get Started?</p>
-                <Link href="" className="site_btn">
+                <Link href="/signup" className="site_btn">
                   Sign Up
                 </Link>
               </div>
@@ -20,7 +26,7 @@ const Login = () => {
               <div className="inner">
                 <div className="inside">
                   <div className="logo">
-                    <Link href="">
+                    <Link href="/">
                       <Image
                         src="images/logo.svg"
                         alt=""
@@ -54,16 +60,23 @@ const Login = () => {
                       </div>
                       <div className="col-md-12">
                         <div className="txtGrp">
-                          <div className="icos">
+                          <div
+                            className="icos"
+                            onClick={togglePasswordVisibility}
+                            style={{ cursor: "pointer" }}>
                             <Image
-                              src="images/EyeSlash.svg"
+                              src={
+                                showPassword
+                                  ? "/images/uj_eye_open.png"
+                                  : "images/EyeSlash.svg"
+                              }
                               alt=""
                               width={1000}
                               height={100}
                             />
                           </div>
                           <input
-                            type="Password"
+                            type={showPassword ? "text" : "password"}
                             className="input"
                             name="Password"
                             placeholder="Your Password"
@@ -80,7 +93,7 @@ const Login = () => {
                               id="remember"
                               value="remember"
                             />
-                            <label for="remember">Remember me</label>
+                            <label htmlFor="remember">Remember me</label>
                           </div>
                           <Link href="/forgot-password">Forgot Password ?</Link>
                         </div>

@@ -116,11 +116,11 @@ const DashTeamManagement = () => {
         </section>
         {/* <WarningForm formPopup={formPopup} setFormPopup={setFormPopup} /> */}
         {/* <BecomeMember formPopup={formPopup} setFormPopup={setFormPopup} /> */}
-        {/* <BecomeTeamLeader formPopup={formPopup} setFormPopup={setFormPopup} /> */}
+        <BecomeTeamLeader formPopup={formPopup} setFormPopup={setFormPopup} />
         {/* <BecomeSoloAgent formPopup={formPopup} setFormPopup={setFormPopup} /> */}
         {/* <BecomeFreeMember formPopup={formPopup} setFormPopup={setFormPopup} /> */}
         {/* <PromoteTeam formPopup={formPopup} setFormPopup={setFormPopup} /> */}
-        <RemoveMember formPopup={formPopup} setFormPopup={setFormPopup} />
+        {/* <RemoveMember formPopup={formPopup} setFormPopup={setFormPopup} /> */}
       </main>
     </>
   );

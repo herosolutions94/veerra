@@ -11,7 +11,7 @@ const ResetPassword = () => {
             <div className="col1">
               <div className="signup_btn">
                 <p>Already have an account </p>
-                <Link href="" className="site_btn">
+                <Link href="/login" className="site_btn">
                   Sign In
                 </Link>
               </div>
@@ -20,7 +20,7 @@ const ResetPassword = () => {
               <div className="inner">
                 <div className="inside">
                   <div className="logo">
-                    <Link href="">
+                    <Link href="/">
                       <Image
                         src="images/logo.svg"
                         alt=""

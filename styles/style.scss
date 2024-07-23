@@ -6,10 +6,17 @@
     .uj_top_content {
       padding: 5rem 9rem;
       text-align: center;
+      @include mobile_sm {
+        padding: 3rem 1rem;
+      }
       h1 {
         font-size: 58px;
         margin: 30px 0;
         color: $black;
+        @include mobile_sm {
+          font-size: 52px;
+          margin-bottom: 0;
+        }
       }
       h3 {
         font-family: "Caveat";
@@ -20,28 +27,64 @@
     .flex {
       .colL {
         width: 65%;
+        @include ipad {
+          width: 100%;
+          padding-left: 3rem;
+        }
         padding: 9rem 5rem;
         padding-top: 0;
         padding-right: 3rem;
+        padding-bottom: 2rem;
         p {
           margin: 2rem 0;
           padding-right: 21rem;
+          @include mobile_sm {
+            padding-right: 0;
+          }
         }
       }
       .colR {
         width: 35%;
+        @include ipad {
+          width: 100%;
+          padding-left: 3rem;
+          padding-right: 3rem;
+        }
         align-self: flex-end;
         padding-left: 10px;
         padding-bottom: 37px;
         .flex {
           margin-top: -64px;
+          @include ipad {
+            margin-top: 0;
+          }
           .cols {
             width: 100% !important;
             &:nth-child(1) {
               margin-left: -108px;
+              @include ipad {
+                margin-left: 0;
+                width: 50% !important;
+              }
+              @include ipad_sm {
+                width: 64% !important;
+              }
+              @include mobile_sm {
+                width: 100% !important;
+              }
             }
             &:nth-child(2) {
               margin-left: -21px;
+              @include ipad {
+                margin-left: auto;
+                width: 50% !important;
+              }
+              @include ipad_sm {
+                width: 64% !important;
+              }
+              @include mobile_sm {
+                width: 100% !important;
+              }
             }
             .inner {
               box-shadow: 0px 4px 16px -1px rgb(29 29 29 / 45%);
@@ -97,7 +140,13 @@
     .flex_input {
       @include flex;
       gap: 2rem;
+      @include mobile_md {
+        display: block;
+      }
       .field_col {
+        @include mobile_md {
+          margin-bottom: 16px;
+        }
         flex: 1;
         border-right: 1px solid #ddd;
         &:first-child {
@@ -152,9 +201,17 @@
     }
     .flex_res {
       @include flex($justify: center);
+      @include mobile_md {
+        display: block;
+      }
       gap: 5rem;
       .res_col {
         @include flex;
+        @include mobile_md {
+          margin: 25px 7px;
+          gap: unset;
+          justify-content: space-between;
+        }
         gap: 1rem;
         position: relative;
         h5 {
@@ -184,6 +241,10 @@
       }
       .tool_info {
         @include pos($l: null, $b: null, $t: -2rem, $r: -2rem);
+        @include mobile_md {
+          right: 14rem;
+          cursor: pointer;
+        }
         cursor: pointer;
         &:before {
           content: attr(data-tooltip);
@@ -236,10 +297,18 @@
         }
         .colL {
           width: 75%;
+          @include ipad_sm {
+            width: 100%;
+            padding-right: 0;
+          }
           padding-right: 2rem;
         }
         .colR {
           width: 25%;
+          @include ipad_sm {
+            width: 100%;
+            padding-top: 20px;
+          }
           .inner {
             .file_upload_portrait {
               text-align: center;
@@ -295,10 +364,18 @@
     }
     .lbl_area {
       width: 30%;
+      @include mobile_sm {
+        width: 100%;
+        margin-bottom: 3px;
+      }
     }
     .field_area {
       flex: 1;
       padding-left: 1rem;
+      @include mobile_sm {
+        width: 100%;
+        padding-left: 0;
+      }
       .input {
         background-color: $light;
         border: 1px solid rgba($color, 0.2);
@@ -317,6 +394,9 @@
       }
       &.less_width {
         max-width: 65%;
+        @include mobile_sm {
+          max-width: 100%;
+        }
       }
     }
   }
@@ -326,6 +406,9 @@
   padding-top: 0;
   .flex {
     width: 96%;
+    @include mobile_sm {
+      width: 100%;
+    }
     justify-content: center;
     margin: 0 auto;
     text-align: center;
@@ -339,21 +422,52 @@
           font-size: 59px;
           color: $primary-color;
           margin-bottom: 0;
+          @include mobile_sm {
+            font-size: 37px;
+          }
         }
         .image {
           width: 69%;
           margin: 0 auto;
+          @include mobile_sm {
+            width: 100%;
+          }
         }
         .image1 {
           position: absolute;
-          position: absolute;
           right: -31%;
           top: -37px;
+          @include ipad {
+            right: -22%;
+            top: -9px;
+            width: 32%;
+            z-index: 1;
+          }
+          @include mobile_sm {
+            right: -25%;
+            top: 8px;
+            width: 27%;
+          }
         }
         .image2 {
           position: absolute;
           right: -13%;
           top: -47px;
+          @include ipad {
+            right: -9%;
+            top: -8px;
+            width: 32%;
+            z-index: 1;
+          }
+          @include ipad_sm {
+            right: -13%;
+            top: 0px;
+          }
+          @include mobile_sm {
+            right: -8%;
+            top: 12px;
+            width: 25%;
+          }
         }
       }
     }
@@ -363,12 +477,18 @@
     margin-top: 11px;
     .less_width {
       width: 47%;
+      @include ipad {
+        width: 72%;
+      }
       margin: 20px auto;
     }
   }
 }
 // === uj_brand_new ====
 .uj_brand_new {
+  @include ipad_sm {
+    padding-bottom: 0;
+  }
   .content {
     text-align: center;
     h3 {
@@ -378,6 +498,9 @@
       margin: 0 auto;
       color: #000;
       margin-bottom: 40px;
+      @include ipad_sm {
+        width: 100%;
+      }
     }
     .site_btn {
       width: fit-content;
@@ -391,6 +514,9 @@
   .col1 {
     width: 35%;
     position: relative;
+    @include ipad_sm {
+      width: 100%;
+    }
     h5 {
       text-align: center;
       font-size: 18px;
@@ -402,15 +528,30 @@
       text-align: center;
       color: $black;
     }
+    @include ipad_sm {
+      ul {
+        margin-top: 15px;
+      }
+    }
     .shape {
       bottom: -19%;
       position: absolute;
       right: -39px;
       transform: rotate(-33deg);
+      @include ipad_sm {
+        display: none;
+      }
     }
   }
   .col2 {
     width: 30%;
+    @include ipad_sm {
+      width: 46%;
+      margin: 29px auto;
+    }
+    @include mobile_md {
+      width: 100%;
+    }
     .image {
       position: relative;
       padding-bottom: 75%;
@@ -432,6 +573,9 @@
       left: -47px;
       width: 27%;
       transform: rotate(-11deg);
+      @include ipad_sm {
+        display: none;
+      }
     }
   }
 }
@@ -439,9 +583,15 @@
 .uj_ambdr {
   .inner {
     width: 80%;
+    @include ipad_sm {
+      width: 100%;
+    }
     margin: 0 auto;
     .inner2 {
       width: 80%;
+      @include ipad_sm {
+        width: 100%;
+      }
       margin: 0 auto;
     }
     .code {
@@ -469,6 +619,9 @@
     }
     .photo {
       width: 33%;
+      @include ipad_sm {
+        width: 90%;
+      }
       margin: 0 auto;
       .image {
         position: relative;
@@ -539,6 +692,39 @@
     }
     .detail6 {
       margin-top: 30px;
+    }
+  }
+}
+// ====
+.uj_sell_buy_smb {
+  .col1 {
+    width: 60%;
+    @include ipad {
+      width: 100%;
+    }
+    .inner {
+      width: 100%;
+    }
+    .tab_banner {
+      width: 100%;
+    }
+  }
+  .col2 {
+    width: 40%;
+    @include ipad {
+      display: none;
+    }
+    padding-left: 20px;
+    .image {
+      position: relative;
+      padding-bottom: 55%;
+      overflow: hidden;
+      @include radius(20px);
+      img {
+        @include imge;
+        z-index: 1;
+        @include radius(20px);
+      }
     }
   }
 }

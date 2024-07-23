@@ -1,8 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 const ForgetPassword = () => {
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword((prevState) => !prevState);
+  };
+  const [showPassword2, setShowPassword2] = useState(false);
+  const togglePasswordVisibility2 = () => {
+    setShowPassword2((prevState) => !prevState);
+  };
   return (
     <>
       <section className="uj_login uj_forget">
@@ -11,7 +19,7 @@ const ForgetPassword = () => {
             <div className="col1">
               <div className="signup_btn">
                 <p>Already have an account </p>
-                <Link href="" className="site_btn">
+                <Link href="/login" className="site_btn">
                   Sign In
                 </Link>
               </div>
@@ -20,7 +28,7 @@ const ForgetPassword = () => {
               <div className="inner">
                 <div className="inside">
                   <div className="logo">
-                    <Link href="">
+                    <Link href="/">
                       <Image
                         src="images/logo.svg"
                         alt=""
@@ -36,16 +44,23 @@ const ForgetPassword = () => {
                     <div className="row">
                       <div className="col-md-12">
                         <div className="txtGrp">
-                          <div className="icos">
+                          <div
+                            className="icos"
+                            onClick={togglePasswordVisibility}
+                            style={{ cursor: "pointer" }}>
                             <Image
-                              src="images/EyeSlash.svg"
+                              src={
+                                showPassword
+                                  ? "/images/uj_eye_open.png"
+                                  : "images/EyeSlash.svg"
+                              }
                               alt=""
                               width={1000}
                               height={100}
                             />
                           </div>
                           <input
-                            type="Password"
+                            type={showPassword ? "text" : "password"}
                             className="input"
                             name="Password"
                             placeholder="New Password"
@@ -55,16 +70,23 @@ const ForgetPassword = () => {
                       </div>
                       <div className="col-md-12">
                         <div className="txtGrp">
-                          <div className="icos">
+                          <div
+                            className="icos"
+                            onClick={togglePasswordVisibility2}
+                            style={{ cursor: "pointer" }}>
                             <Image
-                              src="images/EyeSlash.svg"
+                              src={
+                                showPassword2
+                                  ? "/images/uj_eye_open.png"
+                                  : "images/EyeSlash.svg"
+                              }
                               alt=""
                               width={1000}
                               height={100}
                             />
                           </div>
                           <input
-                            type="Password"
+                            type={showPassword2 ? "text" : "password"}
                             className="input"
                             name="Password"
                             placeholder="Confirm Password"
@@ -74,15 +96,13 @@ const ForgetPassword = () => {
                       </div>
                       <div className="col-md-12">
                         <div className="flex txtGrp">
-                          <div className="lbl_btn">
-                            <p>
-                              Password must have atleast:
-                              <ul>
-                                <li>8 characters</li>
-                                <li>1 number</li>
-                                <li>1 symbol</li>
-                              </ul>
-                            </p>
+                          <div className="lbl_btn2">
+                            <p>Password must have atleast:</p>
+                            <ul>
+                              <li>8 characters</li>
+                              <li>1 number</li>
+                              <li>1 symbol</li>
+                            </ul>
                           </div>
                         </div>
                       </div>

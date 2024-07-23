@@ -43,7 +43,7 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href="/contact" onClick={ToggleAction}>
+              <Link href="/contactus" onClick={ToggleAction}>
                 Contact us
               </Link>
             </li>

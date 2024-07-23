@@ -91,55 +91,57 @@ const Index = () => {
                 </div>
               </div>
               <div className="col2">
-                <div className="tabs_top">
-                  <button
-                    className={tab == 1 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(1)}>
-                    Leads
-                  </button>
-                  <button
-                    className={tab == 2 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(2)}>
-                    In Agency
-                  </button>
-                  <button
-                    className={tab == 3 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(3)}>
-                    In Escrow
-                  </button>
-                  <button
-                    className={tab == 4 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(4)}>
-                    Deal Completed
-                  </button>
-                  <button
-                    className={tab == 5 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(5)}>
-                    Not Interested
-                  </button>
-                  <button
-                    className={tab == 6 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(6)}>
-                    Selling
-                  </button>
-                  <button
-                    className={tab == 7 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(7)}>
-                    Buying
-                  </button>
-                  <button
-                    className={tab == 8 ? "tab_btn active" : "tab_btn"}
-                    type="button"
-                    onClick={() => setTab(8)}>
-                    Selling & Buying
-                  </button>
+                <div className="top_area">
+                  <div className="tabs_top">
+                    <button
+                      className={tab == 1 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(1)}>
+                      Leads
+                    </button>
+                    <button
+                      className={tab == 2 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(2)}>
+                      In Agency
+                    </button>
+                    <button
+                      className={tab == 3 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(3)}>
+                      In Escrow
+                    </button>
+                    <button
+                      className={tab == 4 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(4)}>
+                      Deal Completed
+                    </button>
+                    <button
+                      className={tab == 5 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(5)}>
+                      Not Interested
+                    </button>
+                    <button
+                      className={tab == 6 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(6)}>
+                      Selling
+                    </button>
+                    <button
+                      className={tab == 7 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(7)}>
+                      Buying
+                    </button>
+                    <button
+                      className={tab == 8 ? "tab_btn active" : "tab_btn"}
+                      type="button"
+                      onClick={() => setTab(8)}>
+                      Selling & Buying
+                    </button>
+                  </div>
                 </div>
                 <div className="tab_content">
                   <div className={tab == 1 ? "active" : ""}>
@@ -318,1215 +320,1229 @@ const Index = () => {
                     </div>
                   </div>
                   <div className={tab == 2 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                   <div className={tab == 3 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                   <div className={tab == 4 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                   <div className={tab == 5 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                   <div className={tab == 6 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                   <div className={tab == 7 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                   <div className={tab == 8 ? "active" : ""}>
-                    <table>
-                      <thead>
-                        <tr>
-                          <th width="10%">Date</th>
-                          <th width="16%">Name</th>
-                          <th width="9%">Objective</th>
-                          <th width="13%">Property Type</th>
-                          <th width="13%">Status</th>
-                          <th width="14%">Lead ID Number</th>
-                          <th width="13%">Phone Number</th>
-                          <th width="14%">Email Address</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>05/24/2024</td>
-                          <td>John Stefen Alvarado</td>
-                          <td>Sell & Buy</td>
-                          <td>Mobile Homes</td>
-                          <td>Deal Completed</td>
-                          <td>ABCD-234-ASDF</td>
-                          <td>345-543-7654</td>
-                          <td>
-                            <div className="copy">
-                              <p>Copy</p>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                    <Pagination />
+                    <div className="dash_table ut_common_bg">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th width="10%">Date</th>
+                            <th width="16%">Name</th>
+                            <th width="9%">Objective</th>
+                            <th width="13%">Property Type</th>
+                            <th width="13%">Status</th>
+                            <th width="14%">Lead ID Number</th>
+                            <th width="13%">Phone Number</th>
+                            <th width="14%">Email Address</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>05/24/2024</td>
+                            <td>John Stefen Alvarado</td>
+                            <td>Sell & Buy</td>
+                            <td>Mobile Homes</td>
+                            <td>Deal Completed</td>
+                            <td>ABCD-234-ASDF</td>
+                            <td>345-543-7654</td>
+                            <td>
+                              <div className="copy">
+                                <p>Copy</p>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <Pagination />
+                    </div>
                   </div>
                 </div>
               </div>
