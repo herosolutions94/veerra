@@ -27,7 +27,7 @@ const DashHeader = () => {
       <header>
         <div className="contain">
           <div className="logo">
-            <Link href="/dashboard">
+            <Link href="/">
               <img src="/images/logo.svg" alt="Logo" />
             </Link>
           </div>
