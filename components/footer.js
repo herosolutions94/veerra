@@ -58,10 +58,10 @@ export default function Footer() {
                   <img src="/images/twitter.svg" alt="" />
                 </Link>
                 <Link href="/" target="_blank" rel="noreferrer">
-                  <img src="/images/instagram.svg" alt="" />
+                  <img src="/images/Instagram.svg" alt="" />
                 </Link>
                 <Link href="/" target="_blank" rel="noreferrer">
-                  <img src="/images/linkedin.svg" alt="" />
+                  <img src="/images/Linkedin.svg" alt="" />
                 </Link>
               </div>
             </div>

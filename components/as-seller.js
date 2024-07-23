@@ -30,7 +30,7 @@ export default function AsSeller() {
           <div
             className="tool_info"
             data-tooltip="Calculated based on a commission rate of 3%">
-            <Image src="/images/info.svg" width={100} height={100} alt="" />
+            <Image src="/images/Info.svg" width={100} height={100} alt="" />
           </div>
         </div>
       </div>
