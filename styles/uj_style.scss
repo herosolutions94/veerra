@@ -1333,6 +1333,9 @@ p {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include mobile_xs {
+        display: block;
+      }
       .searches {
         p {
           color: #000;
